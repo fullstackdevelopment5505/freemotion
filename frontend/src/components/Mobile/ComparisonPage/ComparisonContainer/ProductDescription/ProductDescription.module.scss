@@ -1,0 +1,49 @@
+@import "../../../../../styles/variables";
+
+.container {
+  min-width: calc(95vw / 2);
+  max-width: calc(95vw / 2);
+  font-family: $proxima;
+  display: flex;
+  flex-direction: column;
+
+  &:not(:last-of-type) {
+    padding-right: 2.5%;
+  }
+
+  .description__wrapper {
+    span {
+      color: #898989;
+      font-weight: 500;
+      font-size: 0.9rem;
+      margin-bottom: 0.15rem;
+    }
+
+    p {
+      margin: 0;
+      font-size: 0.95rem;
+      margin-bottom: 0.75rem;
+      background-color: #f9fafa;
+      box-sizing: border-box;
+      padding: 0.35rem;
+      font-size: 0.95rem;
+    }
+  }
+
+  .specs__wrapper {
+    .specName {
+      color: #898989;
+      font-weight: 500;
+      font-size: 0.9rem;
+      margin-bottom: 0.15rem;
+    }
+
+    .spec {
+      margin-bottom: 0.75rem;
+      background-color: #f9fafa;
+      box-sizing: border-box;
+      padding: 0.35rem;
+      font-size: 0.95rem;
+    }
+  }
+}

@@ -1,0 +1,26 @@
+@import "../../../styles/variables";
+
+.container {
+  font-family: $proxima;
+
+  .dropdown__container {
+    margin-bottom: 1.5vh;
+    font-family: $proxima;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0.5rem;
+    border: 1px solid #e7eaed;
+    border-radius: 6px;
+    color: #212121;
+    font-size: 0.95rem;
+    font-weight: 600;
+
+    option {
+      font-family: $proxima;
+      color: #212121;
+      border-radius: 4px;
+      display: block;
+      font-size: 0.85rem;
+    }
+  }
+}

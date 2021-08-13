@@ -1,0 +1,64 @@
+.container {
+  position: relative;
+  margin-bottom: 2.5vh;
+
+  .image__wrapper {
+    box-sizing: border-box;
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #f9fafa;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  .left__arrow,
+  .right__arrow {
+    position: absolute;
+    top: 42.5%;
+    transform: translateY(0.625rem);
+    background-color: #fff;
+    border-radius: 50%;
+    box-sizing: border-box;
+    padding: 0.75rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    svg {
+      width: 1.25rem;
+      height: 1.25rem;
+      margin-bottom: -3px;
+    }
+  }
+
+  .left__arrow {
+    left: 1.25%;
+  }
+
+  .right__arrow {
+    right: 1.25%;
+
+    svg {
+      path {
+        stroke: #212121;
+      }
+    }
+  }
+
+  .dots__wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+}

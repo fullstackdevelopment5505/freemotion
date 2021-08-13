@@ -1,0 +1,120 @@
+@import "../../../styles/variables";
+
+.sidebar__wrapper {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  font-family: $proxima;
+  width: 20vw;
+  margin-right: 2.5rem;
+  justify-content: space-between;
+  height: 80vh;
+
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid #e7eaed;
+    justify-content: space-between;
+    height: 12rem;
+
+    li {
+      height: 100%;
+      width: 100%;
+      box-sizing: border-box;
+      padding-right: 1.5rem;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      transition: 0.25s ease-in-out;
+      border-right: 1px solid transparent;
+      cursor: pointer;
+
+      .active {
+        svg path {
+          stroke: #ff5722;
+        }
+      }
+
+      &:hover {
+        border-right: 1px solid #ff5722;
+
+        span {
+          color: #ff5722;
+        }
+
+        svg {
+          path {
+            stroke: #ff5722;
+          }
+        }
+      }
+
+      span,
+      svg {
+        transition: 0.25s ease-in-out;
+      }
+
+      div {
+        flex: 1;
+      }
+
+      svg {
+        color: #898989;
+        margin-right: 0.75rem;
+        font-size: 1rem;
+        transition: 0.25s ease-in-out;
+      }
+
+      span {
+        font-weight: 600;
+        font-size: 1rem;
+        color: #212121;
+        transition: 0.25s ease-in-out;
+        flex: 3;
+      }
+    }
+  }
+
+  .logout__wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    span {
+      font-weight: 600;
+      font-size: 1rem;
+      color: #212121;
+      transition: 0.25s ease-in-out;
+    }
+
+    &:hover {
+      cursor: pointer;
+
+      span {
+        color: #ff5722;
+      }
+
+      svg {
+        path {
+          stroke: #ff5722;
+        }
+      }
+    }
+
+    svg {
+      width: 1rem;
+      height: 1rem;
+      margin-bottom: -3px;
+      margin-right: 0.45rem;
+      transition: 0.25s ease-in-out;
+
+      path {
+        transition: 0.25s ease-in-out;
+      }
+    }
+  }
+}

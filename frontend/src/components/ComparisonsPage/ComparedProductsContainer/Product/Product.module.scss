@@ -1,0 +1,327 @@
+@import "../../../../styles/variables";
+
+.product__wrapper {
+  font-family: $proxima;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  width: calc(80% / 3);
+  position: relative;
+
+  &:not(:first-of-type):not(:last-of-type) {
+    margin: 0 calc(20% / 3);
+  }
+
+  .image__wrapper {
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    padding: 1rem;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .removeProduct__button {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    background-color: #e7eaed;
+    width: 1.5rem;
+    height: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: 0.25s ease-in-out;
+
+    &:hover {
+      cursor: pointer;
+      background-color: #c8c8c8;
+    }
+
+    svg {
+      width: 0.9rem;
+      height: 0.9rem;
+      color: #212121;
+      fill: #212121;
+      margin-bottom: -0.125rem;
+    }
+  }
+
+  .product__showcaseInfo {
+    border-bottom: 1px solid #e7eaed;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    width: 100%;
+    min-height: 17.5vh;
+
+    .top__wrapper {
+      span {
+        color: #898989;
+        font-size: 0.8rem;
+      }
+
+      h4 {
+        margin: 0;
+      }
+
+      margin-bottom: 1rem;
+    }
+
+    .bottom__wrapper {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      .right__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        flex: 1;
+
+        span {
+          color: #898989;
+          font-size: 0.85rem;
+        }
+
+        .colors__wrapper {
+          width: 100%;
+          margin-left: auto;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: flex-end;
+          margin-bottom: 0.5rem;
+        }
+      }
+    }
+
+    .left__wrapper {
+      flex: 1;
+
+      .review__container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 1rem;
+
+        span {
+          margin-right: 0.5rem;
+        }
+
+        svg {
+          color: #898989;
+          margin-bottom: 2px;
+          width: 0.75rem;
+          height: 0.75rem;
+        }
+
+        .stars__wrapper {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          margin-right: 0.45rem;
+
+          svg {
+            width: 1rem;
+            height: 1rem;
+            margin-bottom: -2.5px;
+          }
+        }
+
+        .review {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+
+          span {
+            font-weight: 600;
+            color: #333;
+            font-size: 14px;
+          }
+
+          svg {
+            color: #bdbdbd;
+            margin-left: 0.25rem;
+            font-size: 0.85rem;
+          }
+        }
+      }
+
+      .price__wrapper {
+        .newPrice {
+          display: flex;
+          flex-direction: row;
+          align-items: flex-start;
+          margin-bottom: 0.25rem;
+
+          span {
+            font-weight: 600;
+            color: #212121;
+
+            &:first-of-type {
+              font-size: 12px;
+              margin-right: 0.15rem;
+            }
+
+            &:last-of-type {
+              margin-top: -1.5px;
+              font-size: 18px;
+            }
+          }
+        }
+
+        .wrapper {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+
+          .oldPrice {
+            margin-top: -8px;
+            margin-right: 0.25rem;
+
+            span {
+              color: #898989;
+              font-size: 14px;
+              font-weight: 400;
+            }
+
+            .bar {
+              width: 3rem;
+              height: 1px;
+              background-color: #898989;
+              margin-top: -9px;
+            }
+          }
+
+          .discount {
+            background-color: #f3ffe6;
+            border-radius: 6px;
+            box-sizing: border-box;
+            padding: 0.15rem 0.25rem;
+            color: #67b70a;
+            font-weight: 400;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+
+  .options__wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+    box-sizing: border-box;
+    padding: 0.5rem;
+    margin-bottom: 1.5rem;
+
+    .option {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+
+      &:first-of-type {
+        border-right: 1px solid #e7eaed;
+        box-sizing: border-box;
+        padding-right: 0.75rem;
+      }
+
+      &:last-of-type {
+        box-sizing: border-box;
+        padding-left: 0.75rem;
+      }
+
+      svg {
+        width: 1.5rem;
+        height: 1.5rem;
+
+        path {
+          transition: 0.25s ease-in-out;
+        }
+      }
+
+      &:hover {
+        cursor: pointer;
+
+        svg path {
+          stroke: #ff5722;
+        }
+      }
+    }
+  }
+
+  .description__wrapper {
+    background-color: #f9fafa;
+    border-top: 1px dashed #e7eaed;
+    border-bottom: 1px dashed #e7eaed;
+    max-height: 17.5vh;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(
+      180deg,
+      rgba(249, 250, 250, 0) 0%,
+      #f9fafa 100%
+    );
+
+    .seeDescription {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      background-color: #f9fafa;
+      width: 100%;
+      box-sizing: border-box;
+      padding: 0.5rem;
+      text-align: center;
+
+      span {
+        color: #212121;
+      }
+
+      &:hover {
+        cursor: pointer;
+
+        span {
+          text-decoration: underline;
+        }
+      }
+    }
+
+    p {
+      margin: 0;
+      box-sizing: border-box;
+      padding: 1rem;
+    }
+  }
+
+  .specs__wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    .spec {
+      background-color: #fff;
+      border: none;
+      box-sizing: border-box;
+      padding: 0.5rem 1rem;
+
+      span {
+        color: #212121;
+        font-size: 1rem;
+      }
+
+      &:nth-of-type(2n) {
+        background-color: #f9fafa;
+        border-top: 1px dashed #e7eaed;
+        border-bottom: 1px dashed #e7eaed;
+      }
+    }
+  }
+}

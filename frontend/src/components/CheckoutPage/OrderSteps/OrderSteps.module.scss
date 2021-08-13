@@ -1,0 +1,96 @@
+@import "../../../styles/variables";
+
+.stepsContainer__wrapper {
+  height: fit-content;
+  width: 100%;
+  border-bottom: 1px solid #e7eaed;
+
+  .steps__container {
+    margin-bottom: -1px;
+    display: flex;
+    flex-direction: row;
+    font-family: $proxima;
+    width: 20%;
+    margin-left: 10%;
+    justify-content: space-between;
+
+    .stepBlock {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid transparent;
+      transition: 0.25s ease-in-out;
+      opacity: 0.75;
+
+      &:hover {
+        cursor: pointer;
+      }
+
+      .step__wrapper {
+        background-color: #212121;
+        width: 1.5rem;
+        height: 1.5rem;
+        border-radius: 50%;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-right: 0.25rem;
+
+        span {
+          font-size: 0.85rem;
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 575.98px) {
+  .stepsContainer__wrapper {
+    .steps__container {
+      width: 100%;
+      margin: 0;
+      box-sizing: border-box;
+      padding: 0 2.5%;
+    }
+  }
+}
+
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+  .stepsContainer__wrapper {
+    .steps__container {
+      width: 25%;
+    }
+  }
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+  .stepsContainer__wrapper {
+    .steps__container {
+      width: 100%;
+      margin: 0;
+      box-sizing: border-box;
+      padding: 0 2.5%;
+    }
+  }
+}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) and (min-width: 768px) {
+  .stepsContainer__wrapper {
+    .steps__container {
+      width: 100%;
+      margin: 0;
+      box-sizing: border-box;
+      padding: 0 2.5%;
+    }
+  }
+}
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) {
+}

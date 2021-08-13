@@ -1,0 +1,138 @@
+@import "../../../styles/variables";
+
+.orderSummary__wrapper {
+  font-family: $proxima;
+  flex: 1;
+  margin-bottom: 1.5rem;
+  border: 1px solid #e7eaed;
+  height: 40vh;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  width: 100%;
+
+  .header {
+    width: 100%;
+    background-color: #f9fafa;
+    box-sizing: border-box;
+    padding: 0.9rem 1.5rem;
+    margin-bottom: 1.5rem;
+
+    h4 {
+      margin: 0;
+      color: #212121;
+      font-weight: 600;
+      font-size: 1.15rem;
+      text-align: left;
+    }
+  }
+
+  .orderOverview__wrapper {
+    box-sizing: border-box;
+    padding: 1rem 1.5rem;
+    padding-bottom: 0;
+
+    div {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+
+      &:first-of-type {
+        margin-bottom: 0.65rem;
+      }
+    }
+
+    .total {
+      margin-top: 1.95rem;
+      span {
+        font-weight: 600;
+      }
+    }
+  }
+
+  .checkOut__options {
+    padding: 1.5rem;
+    margin-top: auto;
+
+    button {
+      width: 100%;
+      padding: 0.65rem;
+      border-radius: 4px;
+      font-weight: 500;
+
+      &:last-of-type {
+        background-color: #fff;
+        border: 1px solid #e7eaed;
+        transition: 0.25s ease-in-out;
+
+        &:hover {
+          cursor: pointer;
+          background-color: #f0f0f0;
+        }
+      }
+    }
+
+    .separator {
+      display: flex;
+      align-items: center;
+      text-align: center;
+      color: #212121;
+      font-size: 0.95rem;
+      font-weight: 400;
+      margin: 0.5rem 0;
+    }
+
+    .separator::before,
+    .separator::after {
+      content: "";
+      flex: 1;
+      border-bottom: 1px solid #e7eaed;
+    }
+
+    .separator::before {
+      margin-right: 0.25em;
+    }
+
+    .separator::after {
+      margin-left: 0.25em;
+    }
+  }
+}
+
+@media (max-width: 575.98px) {
+  .orderSummary__wrapper {
+    width: 100%;
+    margin: 0;
+    height: auto;
+  }
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+  .orderSummary__wrapper {
+    width: 100%;
+    margin: 0;
+    height: auto;
+  }
+}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) and (min-width: 768px) {
+  .orderSummary__wrapper {
+    width: 100%;
+    margin: 0;
+    height: auto;
+  }
+}
+
+// Macbook Pro (Retina)
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+  .orderSummary__wrapper {
+    margin: 0;
+    height: auto;
+    margin-bottom: 2.5rem;
+  }
+}

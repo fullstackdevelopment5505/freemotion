@@ -1,0 +1,23 @@
+@import "../../../styles/variables";
+
+.button {
+  width: 100%;
+  background-color: #ff5722;
+  color: #fff;
+  border-radius: 4px;
+  font-weight: 500;
+  font-family: $proxima;
+  box-sizing: border-box;
+  padding: 0.85rem;
+  font-size: 18px;
+  outline: none;
+  transition: 0.25s ease-in-out;
+  border: 1px solid transparent;
+
+  &:hover {
+    cursor: pointer;
+    background-color: #fff;
+    color: #ff5722;
+    border-color: #ff5722;
+  }
+}

@@ -1,0 +1,127 @@
+@import "../../../styles/variables";
+
+.products__container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  font-family: $proxima;
+  margin-bottom: 20vh;
+  border-radius: 6px;
+  border: 1px solid #e7eaed;
+  overflow: hidden;
+
+  .fields__wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #f9fafa;
+    box-sizing: border-box;
+    padding: 1rem 2rem;
+
+    span {
+      text-align: left;
+
+      &:first-of-type {
+        flex: 8;
+      }
+
+      &:nth-of-type(2) {
+        flex: 3;
+      }
+
+      &:last-of-type {
+        flex: 1;
+      }
+    }
+  }
+
+  .products__wrapper {
+    max-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+  }
+
+  .subtotal__wrapper {
+    box-sizing: border-box;
+    padding: 0.5rem 1rem;
+    border-top: 1px solid #e7eaed;
+
+    display: flex;
+    flex-direction: row;
+
+    .positioner {
+      flex: 200;
+    }
+
+    .wrapper {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      flex: 104;
+
+      span {
+        color: #212121;
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+@media (max-width: 575.98px) {
+  .products__container {
+    margin-bottom: 5vh;
+
+    .fields__wrapper {
+      display: none;
+    }
+
+    .subtotal__wrapper {
+      padding: 0.75rem 0.5rem;
+
+      .positioner {
+        flex: 72;
+      }
+    }
+  }
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+  .products__container {
+    margin-bottom: 5vh;
+
+    .fields__wrapper {
+      display: none;
+    }
+
+    .subtotal__wrapper {
+      padding: 0.75rem 0.5rem;
+
+      .positioner {
+        flex: 72;
+      }
+    }
+  }
+}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) and (min-width: 768px) {
+  .products__container {
+    margin-bottom: 5vh;
+
+    .fields__wrapper {
+      display: none;
+    }
+
+    .subtotal__wrapper {
+      padding: 0.75rem 0.5rem;
+
+      .positioner {
+        flex: 72;
+      }
+    }
+  }
+}

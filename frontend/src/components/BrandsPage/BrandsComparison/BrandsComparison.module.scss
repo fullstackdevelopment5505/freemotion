@@ -1,0 +1,95 @@
+@import "../../../styles/variables";
+
+.container {
+  font-family: $proxima;
+
+  .header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    ul {
+      list-style-type: none;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding: 0;
+      margin: 0;
+
+      li {
+        transition: 0.25s ease-in-out;
+
+        &:hover {
+          cursor: pointer;
+          color: #ff5722;
+        }
+
+        &:not(:last-of-type) {
+          margin-right: 1.25rem;
+        }
+      }
+    }
+  }
+
+  .brands__comparison {
+    margin-bottom: 5rem;
+
+    .brands__wrapper {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding: 1rem 1.5rem;
+      border-bottom: 1px solid #e7eaed;
+
+      .brandName__wrapper {
+        flex: 1;
+        display: flex;
+        flex-direction: row;
+
+        span {
+          color: #212121;
+          margin-right: 0.35rem;
+          margin-top: -1px;
+          font-weight: 600;
+        }
+      }
+    }
+
+    .brandsProprieties {
+      .row {
+        display: flex;
+        flex-direction: row;
+        background-color: #fdfdff;
+        box-sizing: border-box;
+        padding: 1rem 1.5rem;
+        border-bottom: 1px solid #e7eaed;
+
+        &:nth-of-type(2n) {
+          background-color: #fff;
+        }
+
+        .column,
+        .propertyName {
+          flex: 1;
+          display: flex;
+          flex-direction: row;
+        }
+
+        .column {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+
+          span {
+            margin-right: 0.35rem;
+          }
+
+          svg {
+            margin-bottom: -2px;
+          }
+        }
+      }
+    }
+  }
+}

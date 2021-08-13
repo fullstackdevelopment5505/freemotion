@@ -1,0 +1,67 @@
+@import "../../../styles/variables";
+
+.container {
+  flex: 1;
+
+  .navItems {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+
+    li {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      width: 100%;
+      box-sizing: border-box;
+      padding: 0.35rem 0.45rem;
+      margin: 0.1rem 0;
+      transition: 0.25s ease-in-out;
+      border-radius: 5px;
+      justify-content: space-between;
+
+      &:hover {
+        background-color: #fff0eb;
+        cursor: pointer;
+
+        span,
+        svg {
+          color: #ff5722;
+        }
+
+        svg {
+          transform: translate(0);
+          opacity: 1;
+        }
+      }
+
+      span {
+        color: #212121;
+        flex: 3;
+        font-weight: 500;
+        transition: 0.25s ease-in-out;
+      }
+
+      svg {
+        transform: translate(-30px);
+        opacity: 0;
+        transition: 0.25s ease-in-out;
+      }
+    }
+  }
+}
+
+@media (max-width: 1024.98px) and (min-width: 992px)  {
+  .container {
+    .navItems {
+      margin-right: 7.5rem;
+
+      li {
+        span {
+          font-size: 1.65rem;
+        }
+      }
+    }
+  }
+}

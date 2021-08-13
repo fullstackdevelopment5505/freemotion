@@ -1,0 +1,118 @@
+@import "../../../styles/variables";
+
+.loginForm__wrapper {
+  display: flex;
+  flex-direction: column;
+  font-family: $proxima;
+
+  .passwordLabel__wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+
+    span {
+      color: #ff5722;
+      font-size: 0.85rem;
+
+      &:hover {
+        cursor: pointer;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  label {
+    text-align: left;
+    font-weight: 600;
+    color: #212121;
+    font-size: 0.9rem;
+    margin-bottom: 0.15rem;
+  }
+
+  input,
+  select {
+    box-sizing: border-box;
+    padding: 0.75rem 0.75rem;
+    border: 1px solid #d9dcdf;
+    border-radius: 4px;
+    margin-bottom: 0.95rem;
+
+    &::placeholder {
+      color: #898989;
+      font-size: 1rem;
+      font-weight: 400;
+    }
+  }
+
+  select {
+    padding: 0.75rem 0.55rem;
+  }
+
+  button {
+    margin-top: 3rem;
+    font-size: 1rem;
+    padding: 0.75rem;
+    border-radius: 4px;
+  }
+
+  .rememberMe__wrapper {
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    input[type="checkbox"] {
+      margin: 0;
+      padding: 0;
+      margin-right: 0.25rem;
+    }
+
+    label {
+      margin: 0;
+    }
+  }
+}
+
+.facebook__form,
+.google__form {
+  button {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #898989;
+    border-radius: 6px;
+    box-sizing: border-box;
+    padding: 0.25rem 0.5rem;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    svg {
+      width: 1.75rem;
+      height: 1.75rem;
+      object-fit: contain;
+      flex: 7;
+    }
+
+    span {
+      font-size: 1.05rem;
+      flex: 1;
+      font-family: $proxima;
+      font-weight: 600;
+      color: #212121;
+    }
+  }
+}
+
+.facebook__form {
+  margin-top: 0.75rem;
+}
+
+.google__form {
+  margin-top: 0.75rem;
+}

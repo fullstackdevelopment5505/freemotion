@@ -1,0 +1,349 @@
+@import "../../../styles/variables";
+
+.reviewSection {
+  .reviews__container {
+    margin-bottom: 5rem;
+  }
+
+  .writeReview {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+    button {
+      width: 10rem;
+    }
+
+    span {
+      color: #ff5722;
+
+      &:hover {
+        cursor: pointer;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.card__wrapper {
+  width: 100%;
+  background-color: #fff;
+  padding: 2rem;
+  box-sizing: border-box;
+  font-family: $proxima;
+  border: 1px solid #e7eaed;
+
+  svg {
+    color: #fcc455;
+  }
+
+  .wrapper {
+    display: flex;
+    flex-direction: row;
+
+    .overall__review {
+      flex: 4;
+
+      h3 {
+        margin: 0;
+        box-sizing: border-box;
+        color: #212121;
+        font-size: 18px;
+        font-weight: 600;
+      }
+
+      .overallRating {
+        span {
+          color: #212121;
+          font-size: 80px;
+          font-weight: 700;
+        }
+      }
+
+      .overallRating__stars {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        svg {
+          width: 1.25rem;
+          height: 1.25rem;
+          margin-bottom: -3px;
+        }
+      }
+    }
+
+    .starRatings__wrapper {
+      flex: 6;
+
+      .starRating {
+        font-family: $proxima;
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 6px;
+        align-items: center;
+
+        svg {
+          width: 1.25rem;
+          height: 1.25rem;
+          margin-bottom: -3px;
+        }
+
+        span {
+          flex: 1;
+          font-weight: 400;
+          font-size: 18px;
+          color: #212121;
+        }
+
+        span:last-of-type {
+          flex: 2;
+        }
+
+        svg {
+          flex: 2;
+        }
+
+        .reviewBar {
+          flex: 20;
+          border-radius: 12px;
+          height: 12px;
+          background-color: #dcdcdc;
+          margin: 0 6px;
+
+          .progress {
+            height: 100%;
+
+            border-radius: 12px;
+          }
+        }
+
+        &:first-of-type {
+          .reviewBar .progress {
+            background-color: #6ab46e;
+          }
+        }
+
+        &:nth-of-type(2) {
+          .reviewBar .progress {
+            background-color: #aed74a;
+          }
+        }
+
+        &:nth-of-type(3) {
+          .reviewBar .progress {
+            background-color: #f7e645;
+          }
+        }
+
+        &:nth-of-type(4) {
+          .reviewBar .progress {
+            background-color: #ff5722;
+          }
+        }
+
+        &:last-of-type {
+          .reviewBar .progress {
+            background-color: #b42025;
+          }
+        }
+      }
+    }
+  }
+}
+
+.reviewCard__wrapper {
+  width: 100%;
+  background-color: #fff;
+  box-sizing: border-box;
+  padding: 2rem 0;
+  font-family: $proxima;
+  text-align: left;
+  border-bottom: 1px solid #e7eaed;
+
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.25rem;
+
+    span {
+      &:first-of-type {
+        color: #212121;
+        font-size: 1.15rem;
+        font-weight: 400;
+      }
+
+      &:last-of-type {
+        color: #898989;
+        font-size: 1rem;
+        font-weight: 400;
+      }
+    }
+  }
+
+  .nameReview__wrapper {
+    margin-bottom: 1.25rem;
+
+    p {
+      color: #212121;
+      font-weight: 400;
+      font-size: 18px;
+      margin: 0;
+      margin-bottom: 0.5rem;
+    }
+
+    .review {
+      display: flex;
+      flex-direction: row;
+
+      .stars__wrapper {
+        display: flex;
+        flex-direction: row;
+
+        svg {
+          width: 1.25rem;
+          height: 1.25rem;
+          margin-bottom: -3px;
+        }
+      }
+
+      .date {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        svg {
+          color: #b5b5b5;
+          width: 0.4rem;
+          height: 0.4rem;
+          object-fit: contain;
+          margin: 0 0.5rem;
+        }
+
+        span {
+          color: #b5b5b5;
+          font-weight: 400;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+
+  .prosCons__wrapper {
+    margin-bottom: 1.25rem;
+
+    .pros {
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 0.25rem;
+
+      span {
+        &:first-of-type {
+          flex: 1;
+          color: #b5b5b5;
+          font-weight: 400;
+          font-size: 16px;
+        }
+
+        &:last-of-type {
+          flex: 15;
+          color: #212121;
+          font-weight: 400;
+          font-size: 16px;
+        }
+      }
+    }
+
+    .cons {
+      display: flex;
+      flex-direction: row;
+
+      span {
+        &:first-of-type {
+          flex: 1;
+          color: #b5b5b5;
+          font-weight: 400;
+          font-size: 16px;
+        }
+
+        &:last-of-type {
+          flex: 15;
+          color: #212121;
+          font-weight: 400;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+
+  .reviewContent {
+    margin: 0;
+    font-weight: 500;
+    line-height: 1.35rem;
+    font-size: 16px;
+    color: #212121;
+    margin-bottom: 2.5rem;
+  }
+
+  .isVerified {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    span {
+      color: #212121;
+      font-weight: 600;
+      font-size: 16px;
+    }
+
+    svg {
+      margin-right: 0.45rem;
+      color: #08af97;
+      font-size: 1.35rem;
+    }
+  }
+}
+
+@media (max-width: 575.98px) {
+  .card__wrapper {
+    padding: 1rem;
+
+    .wrapper {
+      flex-direction: column;
+
+      .overall__review {
+        text-align: center;
+        margin-bottom: 1rem;
+
+        h3 {
+          border-bottom: 1px solid #eee;
+          padding: 0 0 1rem 0;
+        }
+      }
+
+      .starRatings__wrapper {
+        .starRating {
+          .reviewBar {
+            flex: 14;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {
+}
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) {
+}

@@ -1,0 +1,294 @@
+@import "../../../../styles/variables";
+
+.container {
+  font-family: $proxima;
+
+  h3 {
+    text-align: left;
+    margin-bottom: 1.5rem;
+  }
+
+  .wrappers__container {
+    display: flex;
+    flex-direction: row;
+    height: 15vh;
+    justify-content: space-between;
+    color: #212121;
+
+    .affiliateId__wrapper,
+    .refferalUrl__wrapper {
+      border: 1px solid #e7eaed;
+      box-sizing: border-box;
+      border-radius: 6px;
+      width: 49%;
+      text-align: left;
+      padding: 0.5rem 0.75rem;
+      border-top: 3px solid #212121;
+
+      h6 {
+        margin: 0;
+        font-size: 1rem;
+      }
+    }
+
+    .affiliateId__wrapper {
+      display: flex;
+      flex-direction: column;
+
+      h6 {
+        margin-bottom: 1.5rem;
+      }
+
+      span {
+        font-size: 2.5rem;
+        font-weight: 700;
+      }
+    }
+
+    .refferalUrl__wrapper {
+      h6 {
+        margin-bottom: 0.5rem;
+      }
+
+      .url__wrapper {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        border: 1px solid #d9dcdf;
+        border-radius: 6px;
+        box-sizing: border-box;
+        padding: 0.5rem 0.75rem;
+        margin-bottom: 1rem;
+
+        svg {
+          margin-bottom: -4px;
+        }
+      }
+
+      .shareOptions__wrapper {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        svg {
+          &:first-of-type {
+            margin-right: 0.5rem;
+          }
+        }
+      }
+    }
+    margin-bottom: 10vh;
+  }
+
+  .mobileAffiliateInfo {
+    display: none;
+  }
+
+  .urlGenerator__wrapper {
+    color: #212121;
+
+    p {
+      text-align: left;
+      margin: 0;
+      margin-bottom: 1rem;
+    }
+
+    form {
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+
+      label {
+        color: #212121;
+        font-size: 0.85rem;
+        font-weight: 600;
+        margin-bottom: 0.15rem;
+      }
+
+      input {
+        border: 1px solid #d9dcdf;
+        border-radius: 6px;
+        box-sizing: border-box;
+        padding: 0.5rem 0.75rem;
+        outline-color: #333;
+        font-family: $proxima;
+        margin-bottom: 10vh;
+        font-size: 1rem;
+        color: #212121;
+      }
+
+      button {
+        width: 20%;
+        font-size: 1.25rem;
+        padding: 0.75rem;
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+@media (max-width: 575.98px) {
+  .container {
+    .wrappers__container {
+      display: none;
+    }
+
+    .mobileAffiliateInfo {
+      display: flex;
+      flex-direction: column;
+      color: #212121;
+
+      .top {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        margin-bottom: 1rem;
+
+        span {
+          font-size: 0.85rem;
+          font-weight: 500;
+          margin-right: 2.5rem;
+
+          &:last-of-type {
+            margin: 0;
+            font-size: 1.65rem;
+            font-weight: 600;
+          }
+        }
+      }
+
+      .middle {
+        text-align: left;
+
+        .url__placeholder {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-between;
+          border: 1px solid #d9dcdf;
+          box-sizing: border-box;
+          padding: 0.5rem 0.75rem;
+          border-radius: 4px;
+          margin-bottom: 1rem;
+
+          span {
+            color: #000;
+          }
+
+          svg {
+            margin-bottom: -4px;
+          }
+        }
+
+        .icons__wrapper {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          width: 5rem;
+          margin-left: auto;
+          justify-content: space-between;
+          margin-bottom: 1.5rem;
+        }
+      }
+    }
+
+    .urlGenerator__wrapper {
+      margin-bottom: 0.5rem;
+
+      form {
+        button {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+  .container {
+    .wrappers__container {
+      display: none;
+    }
+
+    .mobileAffiliateInfo {
+      display: flex;
+      flex-direction: column;
+      color: #212121;
+
+      .top {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        margin-bottom: 1rem;
+
+        span {
+          font-size: 0.85rem;
+          font-weight: 500;
+          margin-right: 2.5rem;
+
+          &:last-of-type {
+            margin: 0;
+            font-size: 1.65rem;
+            font-weight: 600;
+          }
+        }
+      }
+
+      .middle {
+        text-align: left;
+
+        .url__placeholder {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-between;
+          border: 1px solid #d9dcdf;
+          box-sizing: border-box;
+          padding: 0.5rem 0.75rem;
+          border-radius: 4px;
+          margin-bottom: 1rem;
+
+          span {
+            color: #000;
+          }
+
+          svg {
+            margin-bottom: -4px;
+          }
+        }
+
+        .icons__wrapper {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          width: 5rem;
+          margin-left: auto;
+          justify-content: space-between;
+          margin-bottom: 1.5rem;
+        }
+      }
+    }
+
+    .urlGenerator__wrapper {
+      margin-bottom: 0.5rem;
+
+      form {
+        button {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+// Macbook Pro (Retina)
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+  .container {
+    .wrappers__container {
+      height: 17vh;
+    }
+  }
+}

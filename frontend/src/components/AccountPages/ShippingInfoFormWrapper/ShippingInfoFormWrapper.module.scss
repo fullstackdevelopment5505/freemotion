@@ -1,0 +1,56 @@
+@import "../../../styles/variables";
+
+.container {
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+  padding: 0 0 6rem 4rem;
+  box-sizing: border-box;
+
+  .header {
+    margin-right: auto;
+    width: fit-content;
+    text-align: left;
+    margin-bottom: 2.5rem;
+
+    h5,
+    p {
+      margin: 0;
+    }
+
+    h5 {
+      font-weight: 600;
+      font-size: 1.15rem;
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      color: #898989;
+      font-weight: 400;
+      font-size: 0.9rem;
+    }
+  }
+}
+
+@media (max-width: 575.98px) {
+  .container {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+  .container {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) and (min-width: 768px) {
+  .container {
+    width: 100%;
+    padding: 0;
+  }
+}

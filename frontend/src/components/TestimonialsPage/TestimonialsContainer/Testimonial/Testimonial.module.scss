@@ -1,0 +1,287 @@
+@import "../../../../styles/variables";
+
+.reviewCard__wrapper {
+  width: 100%;
+  background-color: #fff;
+  box-sizing: border-box;
+  padding: 2rem 0;
+  font-family: $proxima;
+  text-align: left;
+  border-bottom: 1px solid #e7eaed;
+
+  .header {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+    align-items: center;
+
+    .image__wrapper {
+      width: 3.4rem;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid #b5b5b5;
+      box-sizing: border-box;
+      padding: 0.15rem;
+      margin-right: 0.35rem;
+      border-radius: 6px;
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    h4 {
+      text-align: left;
+      margin: 0;
+      font-weight: 600;
+      font-size: 16px;
+      color: #212121;
+    }
+  }
+
+  .nameReview__wrapper {
+    margin-bottom: 1.25rem;
+
+    p {
+      color: #212121;
+      font-weight: 400;
+      font-size: 18px;
+      margin: 0;
+      margin-bottom: 0.5rem;
+    }
+
+    .review {
+      display: flex;
+      flex-direction: row;
+
+      .stars__wrapper {
+        display: flex;
+        flex-direction: row;
+
+        svg {
+          width: 1.25rem;
+          height: 1.25rem;
+          margin-bottom: -3px;
+        }
+      }
+
+      .date {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        svg {
+          color: #b5b5b5;
+          width: 0.4rem;
+          height: 0.4rem;
+          object-fit: contain;
+          margin: 0 0.5rem;
+        }
+
+        span {
+          color: #b5b5b5;
+          font-weight: 400;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+
+  .prosCons__wrapper {
+    margin-bottom: 1.25rem;
+
+    .pros {
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 0.25rem;
+
+      span {
+        &:first-of-type {
+          flex: 1;
+          color: #b5b5b5;
+          font-weight: 400;
+          font-size: 16px;
+        }
+
+        &:last-of-type {
+          flex: 15;
+          color: #212121;
+          font-weight: 400;
+          font-size: 16px;
+        }
+      }
+    }
+
+    .cons {
+      display: flex;
+      flex-direction: row;
+
+      span {
+        &:first-of-type {
+          flex: 1;
+          color: #b5b5b5;
+          font-weight: 400;
+          font-size: 16px;
+        }
+
+        &:last-of-type {
+          flex: 15;
+          color: #212121;
+          font-weight: 400;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+
+  .reviewContent {
+    margin: 0;
+    font-weight: 500;
+    line-height: 1.35rem;
+    font-size: 16px;
+    color: #212121;
+    margin-bottom: 2.5rem;
+  }
+
+  .isVerified {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    span {
+      color: #212121;
+      font-weight: 600;
+      font-size: 16px;
+    }
+
+    svg {
+      margin-right: 0.45rem;
+      color: #08af97;
+      font-size: 1.35rem;
+    }
+  }
+}
+
+@media (max-width: 575.98px) {
+  .reviewCard__wrapper {
+    width: 100%;
+    border-radius: 0;
+    border: none;
+
+    .header {
+      margin-bottom: 1rem;
+
+      .image__wrapper {
+        width: fit-content;
+        margin-right: 0.75rem;
+
+        img {
+          width: 3.5rem;
+          height: 3.5rem;
+          object-fit: contain;
+        }
+      }
+    }
+
+    .prosCons__wrapper {
+      .pros {
+        span {
+          &:last-of-type {
+            flex: 6;
+          }
+        }
+      }
+
+      .cons {
+        span {
+          &:last-of-type {
+            flex: 6;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) and (min-width: 576px) {
+  .reviewCard__wrapper {
+    width: 100%;
+    border-radius: 0;
+    border: none;
+
+    .header {
+      margin-bottom: 1rem;
+
+      .image__wrapper {
+        width: fit-content;
+        margin-right: 0.75rem;
+
+        img {
+          width: 3.5rem;
+          height: 3.5rem;
+          object-fit: contain;
+        }
+      }
+    }
+  }
+}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) and (min-width: 768px) {
+  .reviewCard__wrapper {
+    height: 50vh;
+    border: none;
+    border-radius: 0;
+    padding: 1rem;
+
+    .header {
+      padding-bottom: 0.65rem;
+
+      .image__wrapper {
+        width: 6.5rem;
+        margin-right: 0.5rem;
+      }
+
+      h4 {
+        font-size: 1rem;
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+// Macbook Pro (Retina)
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+  .reviewCard__wrapper {
+    padding: 1rem 2rem;
+
+    .header {
+      margin-bottom: 0.5rem;
+
+      .image__wrapper {
+        width: 6rem;
+        height: 3.5rem;
+        margin-right: 0.5rem;
+
+        img {
+          object-fit: contain;
+          height: 100%;
+        }
+      }
+
+      h4 {
+        font-size: 1rem;
+      }
+    }
+  }
+}
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) {
+}

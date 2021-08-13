@@ -1,0 +1,227 @@
+@import "../../../../styles/variables";
+
+.overshadow {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.6);
+
+  .modal__wrapper {
+    font-family: $proxima;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+    height: 70vh;
+    border-radius: 6px;
+
+    .header {
+      position: relative;
+      background-color: #212121;
+      color: #fff;
+      box-sizing: border-box;
+      border-top-left-radius: 6px;
+      border-top-right-radius: 6px;
+      padding: 1.5rem;
+      padding-right: 4rem;
+
+      .close__wrapper {
+        position: absolute;
+        right: 1.5rem;
+        top: 1.5rem;
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+
+      .topRow {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        box-sizing: border-box;
+        padding-bottom: 1rem;
+
+        div {
+          display: flex;
+          flex-direction: column;
+          text-align: left;
+          justify-content: center;
+          align-items: flex-start;
+
+          span {
+            &:first-of-type {
+              font-size: 0.85rem;
+              font-weight: 600;
+              margin-bottom: 0.35rem;
+            }
+
+            &:last-of-type {
+              font-size: 1rem;
+              font-weight: 400;
+            }
+          }
+        }
+      }
+
+      .bottomRow {
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        text-align: left;
+        padding: 1rem 0 0 0;
+
+        span {
+          &:first-of-type {
+            font-size: 0.85rem;
+            font-weight: 600;
+          }
+
+          &:last-of-type {
+            font-size: 1rem;
+            font-weight: 400;
+          }
+        }
+      }
+    }
+
+    .orderProducts__container {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+
+      .tags {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        box-sizing: border-box;
+        padding: 1rem 2rem;
+        border-bottom: 1px solid #e7eaed;
+
+        span {
+          text-align: left;
+          color: #898989;
+          font-weight: 600;
+          font-size: 0.85rem;
+
+          &:first-of-type {
+            flex: 22;
+          }
+
+          &:nth-of-type(2) {
+            flex: 14;
+          }
+
+          &:last-of-type {
+            flex: 6;
+          }
+        }
+      }
+
+      .products__wrapper {
+        display: flex;
+        flex-direction: column;
+        height: 36vh;
+        overflow-y: auto;
+
+        &::-webkit-scrollbar {
+          width: 5px;
+        }
+
+        &::-webkit-scrollbar-thumb {
+          border-radius: 12px;
+          background-color: #c2c2c2;
+        }
+      }
+
+      .orderOverview {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        margin-left: auto;
+        align-items: center;
+
+        .bottom__wrapper {
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+          box-sizing: border-box;
+          padding: 0.75rem 0;
+
+          span {
+            flex: 1;
+            color: #212121;
+            font-weight: 600;
+            font-size: 1rem;
+          }
+        }
+
+        .top__wrapper {
+          width: 100%;
+          border-bottom: 1px solid #e7eaed;
+          box-sizing: border-box;
+          padding: 0.75rem 0;
+
+          div {
+            display: flex;
+            flex-direction: row;
+
+            &:first-of-type {
+              margin-bottom: 0.35rem;
+            }
+
+            span {
+              flex: 1;
+              color: #212121;
+              font-weight: 400;
+              font-size: 1rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.orderProduct {
+  height: calc(36vh / 3);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  text-align: left;
+  box-sizing: border-box;
+  padding: 1rem;
+  border-bottom: 1px solid #898989;
+
+  .firstCol {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    height: 100%;
+    flex: 10;
+
+    img {
+      height: 100%;
+      width: auto;
+    }
+  }
+
+  .quantity {
+    flex: 6;
+  }
+
+  .price {
+    padding: 0;
+    margin: 0;
+    flex: 3;
+  }
+}

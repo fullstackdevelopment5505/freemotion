@@ -1,0 +1,609 @@
+@import "../../../styles/variables";
+
+// Plan Cards Styling
+.planCard__wrapper {
+  box-sizing: border-box;
+  padding: 1.5rem 0.75rem;
+  border: 1px solid #d9dcdf;
+  width: calc(98% / 2);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 6px;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  input,
+  span {
+    margin: 0;
+    padding: 0;
+  }
+
+  input {
+    margin-right: 0.25rem;
+    position: relative;
+
+    &:checked::before {
+      border-radius: 50%;
+      content: " ";
+      position: absolute;
+      left: -1px;
+      top: -1px;
+      right: -1px;
+      bottom: -1px;
+      background-color: #ff5722;
+      z-index: 2;
+      border: 1px solid #ff5722;
+    }
+
+    &:checked::after {
+      border-radius: 50%;
+      content: " ";
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #ff5722;
+      z-index: 3;
+      border: 2px solid #fff;
+    }
+  }
+
+  span {
+    color: #212121;
+    font-size: 0.85rem;
+    font-weight: 400;
+  }
+}
+
+.container {
+  font-family: $proxima;
+  text-align: left;
+  width: 60%;
+
+  h2 {
+    margin: 0;
+    border-bottom: 1px solid #e7eaed;
+    padding-bottom: 1rem;
+  }
+
+  .paymentSetup__container {
+    display: flex;
+    flex-direction: column;
+
+    .us__orders {
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding: 1rem 0;
+
+      .klarna__wrapper {
+        margin-left: 1.5rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        position: relative;
+        margin-right: 20%;
+
+        img {
+          &:first-of-type {
+            margin-right: 0.5rem;
+          }
+
+          &:last-of-type:hover {
+            cursor: pointer;
+          }
+        }
+      }
+
+      img {
+        margin-right: 0.5rem;
+      }
+
+      span {
+        color: #212121;
+        font-size: 0.85rem;
+      }
+    }
+
+    .paySubscription__wrapper {
+      h5 {
+        margin: 0;
+        margin-bottom: 0.25rem;
+      }
+
+      .availablePlans__wrapper {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 1rem;
+      }
+
+      .planError__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        box-sizing: border-box;
+        padding: 1.25rem 0.75rem;
+        background-color: #ffebea;
+        border-radius: 6px;
+        color: #f44336;
+        margin-bottom: 1rem;
+
+        .wrapper {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          margin-bottom: 0.5rem;
+
+          p {
+            margin: 0;
+          }
+
+          svg {
+            font-size: 1.25rem;
+            margin-right: 0.35rem;
+          }
+        }
+
+        ul {
+          margin: 0;
+          padding-left: 1.65rem;
+          list-style-type: none;
+        }
+      }
+
+      .plansInsight__wrapper {
+        ul {
+          padding-left: 1.25rem;
+          color: #212121;
+
+          li span {
+            font-size: 0.85rem;
+          }
+        }
+
+        p {
+          font-size: 0.85rem;
+          color: #212121;
+
+          span {
+            text-decoration: underline;
+          }
+        }
+      }
+
+      .otherPaymentOptions__container {
+        .paybright__container,
+        .paypal__container {
+          box-sizing: border-box;
+          height: 4rem;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          padding: 0;
+
+          .switch__wrapper {
+            flex: 1;
+          }
+
+          .logo__wrapper {
+            flex: 3;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            img {
+              &:first-of-type {
+                margin-right: 0.5rem;
+              }
+            }
+          }
+
+          .country__wrapper {
+            flex: 12;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            p {
+              color: #212121;
+              font-size: 0.85rem;
+            }
+          }
+        }
+
+        .paybright__container {
+          border-top: 1px solid #e7eaed;
+          border-bottom: 1px solid #e7eaed;
+          display: flex;
+          flex-direction: row;
+
+          .info__wrapper {
+            flex: 12;
+            display: flex;
+            flex-direction: row;
+          }
+
+          .country__wrapper {
+            span {
+              color: #212121;
+              font-size: 0.85rem;
+            }
+
+            img {
+              margin-right: 1rem;
+            }
+          }
+        }
+
+        .paypal__container {
+          border-bottom: 1px solid #e7eaed;
+          margin-bottom: 0.75rem;
+          display: flex;
+          flex-direction: row;
+
+          .info__wrapper {
+            flex: 12;
+            display: flex;
+            flex-direction: row;
+          }
+
+          .country__wrapper {
+            .us_cad__wrapper {
+              display: flex;
+              flex-direction: column;
+              margin-right: 1rem;
+
+              img {
+                &:first-of-type {
+                  margin-bottom: 0.25rem;
+                }
+              }
+            }
+
+            p {
+              width: 65%;
+            }
+          }
+        }
+      }
+
+      .saveInfo {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 5rem;
+
+        p {
+          font-size: 0.85rem;
+          color: #212121;
+          span {
+            text-decoration: underline;
+          }
+        }
+
+        input {
+          margin: 0;
+          margin-right: 0.25rem;
+        }
+
+        label {
+          font-size: 1rem;
+          color: #212121;
+          margin: 0;
+        }
+      }
+    }
+  }
+
+  .footer {
+    button {
+      width: 100%;
+      background-color: #ff5722;
+      color: #fff;
+      border-radius: 8px;
+      font-weight: 500;
+      font-family: $proxima;
+      box-sizing: border-box;
+      padding: 0.85rem;
+      font-size: 18px;
+      outline: none;
+      transition: 0.25s ease-in-out;
+      border: 1px solid transparent;
+      display: flex;
+      position: relative;
+      flex-direction: row;
+
+      .svg__wrapper {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        height: 100%;
+        background: rgba(33, 33, 33, 0.05);
+        border-radius: 0px 4px 4px 0px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: calc(0.85rem * 2 + 18px + 2px);
+
+        svg {
+          z-index: 1;
+          width: 1.15rem;
+          height: 1.15rem;
+          margin-top: 4px;
+          opacity: 1;
+
+          path {
+            opacity: 1;
+            z-index: 2;
+            stroke: #fff;
+            transition: 0.25s ease-in-out;
+          }
+        }
+      }
+
+      &:hover {
+        cursor: pointer;
+        background-color: #fff;
+        color: #ff5722;
+        border-color: #ff5722;
+
+        .svg__wrapper {
+          svg {
+            path {
+              stroke: #ff5722;
+            }
+          }
+        }
+      }
+      width: 40%;
+    }
+  }
+}
+
+.tooltip__container {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip__container .tooltip {
+  visibility: hidden;
+  width: 6.5rem;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  border-radius: 6px;
+  box-shadow: 0 1px 4px #898989;
+  font-size: 0.85rem;
+  color: #212121;
+  box-sizing: border-box;
+  padding: 0.15rem 0.5rem;
+  background-color: #fff;
+
+  span {
+    span {
+      color: #ff5722 !important;
+      font-weight: 600;
+      text-decoration: underline;
+    }
+  }
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: -50px;
+  left: -2.5rem;
+}
+
+.tooltip__container:hover .tooltip {
+  visibility: visible;
+}
+
+@media (max-width: 575.98px) {
+  .planCard__wrapper {
+    width: 100%;
+    padding: 0.75rem;
+
+    &:first-of-type {
+      margin-bottom: 1rem;
+    }
+  }
+
+  .container {
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 5rem;
+
+    .paymentSetup__container {
+      .paySubscription__wrapper {
+        .availablePlans__wrapper {
+          flex-direction: column;
+        }
+
+        .otherPaymentOptions__container {
+          .paybright__container,
+          .paypal__container {
+            height: fit-content;
+            display: flex;
+            align-items: center;
+            box-sizing: border-box;
+            padding: 0.75rem;
+
+            .info__wrapper {
+              flex: 4;
+              flex-direction: column;
+
+              .logo__wrapper {
+                margin-bottom: 0.75rem;
+              }
+
+              .country__wrapper {
+                p {
+                  width: 100%;
+                  margin: 0;
+                }
+              }
+            }
+          }
+        }
+
+        .saveInfo {
+          margin-bottom: 2.5vh;
+        }
+      }
+    }
+
+    .footer {
+      button {
+        width: 100%;
+        font-weight: 500;
+        font-size: 1rem;
+        padding: 0.75rem;
+      }
+    }
+  }
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+  .planCard__wrapper {
+    width: 100%;
+    padding: 0.75rem;
+
+    &:first-of-type {
+      margin-bottom: 1rem;
+    }
+  }
+
+  .container {
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 5rem;
+
+    .paymentSetup__container {
+      .paySubscription__wrapper {
+        .availablePlans__wrapper {
+          flex-direction: column;
+        }
+
+        .otherPaymentOptions__container {
+          .paybright__container,
+          .paypal__container {
+            height: fit-content;
+            display: flex;
+            align-items: center;
+            box-sizing: border-box;
+            padding: 0.75rem;
+
+            .info__wrapper {
+              flex: 4;
+              flex-direction: column;
+
+              .logo__wrapper {
+                margin-bottom: 0.75rem;
+              }
+
+              .country__wrapper {
+                p {
+                  width: 100%;
+                  margin: 0;
+                }
+              }
+            }
+          }
+        }
+
+        .saveInfo {
+          margin-bottom: 2.5vh;
+        }
+      }
+    }
+
+    .footer {
+      button {
+        width: 100%;
+        font-weight: 500;
+        font-size: 1rem;
+        padding: 0.75rem;
+      }
+    }
+  }
+}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) and (min-width: 768px) {
+  .planCard__wrapper {
+    width: 100%;
+    padding: 0.75rem;
+
+    &:first-of-type {
+      margin-bottom: 1rem;
+    }
+  }
+
+  .container {
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 5rem;
+
+    .paymentSetup__container {
+      .paySubscription__wrapper {
+        .availablePlans__wrapper {
+          flex-direction: column;
+        }
+
+        .otherPaymentOptions__container {
+          .paybright__container,
+          .paypal__container {
+            height: fit-content;
+            display: flex;
+            align-items: center;
+            box-sizing: border-box;
+            padding: 0.75rem;
+
+            .info__wrapper {
+              flex: 4;
+              flex-direction: column;
+
+              .logo__wrapper {
+                margin-bottom: 0.75rem;
+              }
+
+              .country__wrapper {
+                p {
+                  width: 100%;
+                  margin: 0;
+                }
+              }
+            }
+          }
+        }
+
+        .saveInfo {
+          margin-bottom: 2.5vh;
+        }
+      }
+    }
+
+    .footer {
+      button {
+        width: 100%;
+        font-weight: 500;
+        font-size: 1rem;
+        padding: 0.75rem;
+      }
+    }
+  }
+}
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) {
+}

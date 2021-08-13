@@ -1,0 +1,118 @@
+@import "../../../styles/variables";
+
+.banner__wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  box-sizing: border-box;
+  padding: 2.5rem 0;
+
+  .col {
+    font-family: $proxima;
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    box-sizing: border-box;
+
+    svg {
+      box-sizing: border-box;
+      padding-top: 0.35rem;
+      margin-right: 0.65rem;
+    }
+
+    p,
+    h4 {
+      margin: 0;
+    }
+
+    h4 {
+      color: $black;
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 0.25rem;
+    }
+
+    p {
+      font-weight: 400;
+      color: #898989;
+      font-size: 14px;
+    }
+  }
+}
+
+@media (max-width: 575.98px) {
+  .banner__wrapper {
+    flex-wrap: wrap;
+
+    .col {
+      width: 50%;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+
+      svg {
+        width: 3.5rem;
+        height: 3.5rem;
+        margin-bottom: 0.75rem;
+      }
+
+      &:first-of-type,
+      &:nth-of-type(2) {
+        margin-bottom: 2rem;
+      }
+
+      h4 {
+        font-size: 1rem;
+        margin: 0;
+      }
+
+      p {
+        font-size: 0.85rem;
+      }
+    }
+  }
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+  .banner__wrapper {
+    flex-wrap: wrap;
+
+    .col {
+      width: 50%;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+
+      svg {
+        width: 3.5rem;
+        height: 3.5rem;
+        margin-bottom: 0.75rem;
+      }
+
+      &:first-of-type,
+      &:nth-of-type(2) {
+        margin-bottom: 2rem;
+      }
+
+      h4 {
+        font-size: 1rem;
+        margin: 0;
+      }
+
+      p {
+        font-size: 0.85rem;
+      }
+    }
+  }
+}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {
+}
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) {
+}

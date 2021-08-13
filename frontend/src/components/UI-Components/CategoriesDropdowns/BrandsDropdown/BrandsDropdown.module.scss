@@ -1,0 +1,62 @@
+@import "../../../../styles/variables";
+
+.container {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  background-color: #fff;
+  z-index: 1002;
+  left: 0;
+  top: 11vh;
+
+  .wrapper {
+    padding-top: 5vh;
+    margin: 0 auto;
+    width: 80%;
+    height: 100%;
+
+    .row {
+      height: 100%;
+      height: 20vh;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+
+      &:not(:last-of-type) {
+        margin-bottom: 0.75vw;
+      }
+    }
+  }
+}
+
+.card__wrapper {
+  border-radius: 4px;
+  font-family: $proxima;
+  width: calc(19.5vw);
+  box-sizing: border-box;
+  padding: 1.5rem 0.5rem;
+  background-color: #f9fafa;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  transition: 0.25s ease-in-out;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    cursor: pointer;
+    background-color: #efefef;
+
+    h4 {
+      color: #ff5722;
+    }
+  }
+
+  h4 {
+    color: #212121;
+    margin: 0;
+    transition: 0.25s ease-in-out;
+  }
+}

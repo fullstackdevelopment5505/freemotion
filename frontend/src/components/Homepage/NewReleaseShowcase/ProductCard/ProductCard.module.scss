@@ -1,0 +1,228 @@
+@import "../../../../styles/variables";
+
+.productCard__wrapper {
+  background-color: #fff;
+  box-sizing: border-box;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  width: 98%;
+  height: 55vh;
+  border: 1px solid #e7eaed;
+  border-radius: 6px;
+
+  .image__wrapper {
+    width: 65%;
+    height: auto;
+    object-fit: contain;
+    margin: 0 auto;
+    margin-bottom: 2.5rem;
+
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .textContent__wrapper {
+    text-align: left;
+    display: flex;
+    font-family: $proxima;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+
+    .product__header {
+      justify-self: flex-start;
+      align-self: flex-start;
+
+      h2 {
+        margin: 0;
+        font-weight: 400;
+        font-size: 18px;
+        color: #212121;
+      }
+
+      .review__wrapper {
+        width: fit-content;
+        font-size: 14px;
+        font-weight: 400;
+
+        .reviewStars {
+          margin-left: 0.35rem;
+          display: inline-flex;
+          flex-direction: row;
+          align-items: center;
+
+          svg {
+            width: 1rem;
+            height: 1rem;
+            color: #fcc455;
+            margin-bottom: -3px;
+          }
+        }
+      }
+    }
+
+    .footer {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-end;
+
+      .price__wrapper {
+        justify-content: flex-end;
+        margin-top: 1.5rem;
+        display: flex;
+        flex-direction: column;
+
+        span {
+          font-weight: 400;
+          font-size: 18px;
+        }
+
+        .oldPrice__wrapper {
+          margin-bottom: 0.45rem;
+
+          span {
+            color: #b5b5b5;
+          }
+
+          div {
+            margin-top: -10px;
+            margin-left: -8px;
+            width: 5.75rem;
+            height: 1.1px;
+            background-color: #b5b5b5;
+            transform: rotatez(-10deg);
+          }
+        }
+      }
+
+      .purchase__wrapper {
+        margin-top: auto;
+        display: flex;
+        flex-direction: row;
+        justify-self: flex-end;
+        align-items: flex-end;
+        align-items: center;
+
+        svg {
+          path {
+            stroke: #898989;
+            font-size: 1.45rem;
+            transition: 0.25s ease-in-out;
+          }
+
+          &:hover {
+            cursor: pointer;
+            path {
+              stroke: #ff5722;
+            }
+          }
+        }
+
+        .wrapper {
+          margin-top: -2px;
+
+          span {
+            border-bottom: 1px solid transparent;
+            transition: 0.25s ease-in-out;
+          }
+
+          svg {
+            font-size: 0.75rem;
+            color: #898989;
+            transform: translate(0);
+            transition: 0.25s ease-in-out;
+          }
+
+          &:hover {
+            cursor: pointer;
+
+            span {
+              border-bottom-color: #ff5722;
+            }
+
+            svg {
+              transform: translate(10px);
+              color: #ff5722;
+              transition: 0.25s ease-in-out;
+            }
+          }
+        }
+
+        span {
+          margin: 0 0.5rem;
+          font-size: 18px;
+          color: #ff5722;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 575.98px) {
+  .productCard__wrapper {
+    width: 100%;
+    padding: 1.5rem;
+    border: none;
+    border-radius: 0;
+
+    .textContent__wrapper {
+      .product__header {
+        text-align: left;
+        display: flex;
+        flex-direction: column-reverse;
+      }
+    }
+  }
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+  .productCard__wrapper {
+    width: 100%;
+    padding: 1.5rem;
+    border: none;
+    border-radius: 0;
+
+    .image__wrapper {
+      width: 45%;
+    }
+
+    .textContent__wrapper {
+      .product__header {
+        text-align: left;
+        display: flex;
+        flex-direction: column-reverse;
+      }
+    }
+  }
+}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) and (min-width: 768px) {
+  .productCard__wrapper {
+    padding: 1rem;
+    height: 50vh;
+    border: none;
+    border-radius: 0;
+
+    .textContent__wrapper {
+      .footer {
+        align-items: center;
+      }
+    }
+  }
+}
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) {
+}

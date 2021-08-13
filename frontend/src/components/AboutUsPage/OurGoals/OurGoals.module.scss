@@ -1,0 +1,200 @@
+@import "../../../styles/variables";
+
+.container {
+  width: 100%;
+  height: auto;
+  position: relative;
+  font-family: $proxima;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  .content__container {
+    position: absolute;
+    left: 10%;
+    width: 40%;
+    top: 10%;
+    height: 80%;
+    background: rgba(255, 255, 255, 0.1);
+    box-sizing: border-box;
+    padding: 2rem;
+
+    .wrapper {
+      text-align: left;
+
+      h3,
+      p {
+        margin: 0;
+        color: #fff;
+      }
+
+      h3 {
+        font-size: 1.85rem;
+        margin-bottom: 1.5rem;
+      }
+
+      p {
+        font-size: 1.15rem;
+        line-height: 1.85rem;
+
+        &:first-of-type {
+          margin-bottom: 3rem;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 575.98px) {
+  .container {
+    margin-top: 5vh;
+    height: fit-content;
+
+    img {
+      height: 90vh;
+      object-position: 75% 100%;
+      object-fit: cover;
+    }
+
+    .content__container {
+      padding: 1rem;
+      left: 5%;
+      width: 90%;
+      top: unset;
+      bottom: 2.5%;
+      height: fit-content;
+
+      .wrapper {
+        p {
+          font-size: 0.95rem;
+          line-height: 1.45rem;
+
+          &:first-of-type {
+            margin-bottom: 5vh;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) and (min-width: 576px) {
+  .container {
+    margin-top: 2.5vh;
+    height: fit-content;
+
+    img {
+      height: 90vh;
+      object-position: 75% 100%;
+      object-fit: cover;
+    }
+
+    .content__container {
+      padding: 1rem;
+      left: 5%;
+      width: 90%;
+      top: unset;
+      bottom: 2.5%;
+      height: fit-content;
+
+      .wrapper {
+        p {
+          font-size: 0.95rem;
+          line-height: 1.45rem;
+
+          &:first-of-type {
+            margin-bottom: 5vh;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) and (min-width: 768px) {
+  .container {
+    margin-top: 2.5vh;
+    height: fit-content;
+
+    img {
+      height: 90vh;
+      object-position: 75% 100%;
+      object-fit: cover;
+    }
+
+    .content__container {
+      padding: 1rem;
+      left: 5%;
+      width: 90%;
+      top: unset;
+      bottom: 4.5%;
+      height: fit-content;
+
+      .wrapper {
+        p {
+          font-size: 1.25rem;
+          line-height: 1.75rem;
+
+          &:first-of-type {
+            margin-bottom: 5vh;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1024.98px) and (min-width: 992px) {
+  .container {
+    margin-top: 2.5vh;
+    height: fit-content;
+
+    img {
+      height: 90vh;
+      object-position: 75% 100%;
+      object-fit: cover;
+    }
+
+    .content__container {
+      padding: 1rem;
+      left: 5%;
+      width: 90%;
+      top: unset;
+      bottom: 4.5%;
+      height: fit-content;
+
+      .wrapper {
+        h3 {
+          font-size: 2.5rem;
+        }
+
+        p {
+          font-size: 1.65rem;
+          line-height: 2.5rem;
+
+          &:first-of-type {
+            margin-bottom: 5vh;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+  .container {
+    img {
+      height: 95vh;
+      object-position: 75% 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) {
+}

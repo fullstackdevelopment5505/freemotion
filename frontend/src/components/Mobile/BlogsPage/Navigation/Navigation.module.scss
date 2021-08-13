@@ -1,0 +1,42 @@
+@import "../../../../styles/variables";
+
+.nav__container {
+  font-family: $proxima;
+  width: 100%;
+  max-width: 95vw;
+  overflow-x: scroll;
+
+  ul {
+    min-width: 132.5vw;
+    list-style-type: none;
+    width: fit-content;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-top: 1px solid #e7eaed;
+    border-bottom: 1px solid #e7eaed;
+    box-sizing: border-box;
+    overflow-x: auto;
+
+    li {
+      border-bottom: 1px solid transparent;
+      transition: 0.25s ease-in-out;
+      padding: 0.75rem;
+      width: fit-content;
+
+      &:hover {
+        border-bottom-color: #212121;
+        cursor: pointer;
+      }
+
+      span {
+        text-align: center;
+        width: fit-content;
+        font-size: 14px;
+        font-weight: 400;
+      }
+    }
+  }
+}

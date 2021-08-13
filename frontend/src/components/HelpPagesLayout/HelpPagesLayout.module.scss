@@ -1,0 +1,356 @@
+@import "../../styles/variables";
+
+.layout__wrapper {
+  font-family: $proxima;
+  position: relative;
+
+  .searchbar__hero {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 30vw;
+    color: #fff;
+
+    h5 {
+      font-size: 1.85rem;
+    }
+
+    .searchbar__wrapper {
+      box-sizing: border-box;
+      padding: 0.5rem;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      background: rgba(255, 255, 255, 0.2);
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      border-radius: 6px;
+
+      svg {
+        flex: 1;
+        font-size: 1.35rem;
+        margin-right: 0.25rem;
+      }
+
+      input {
+        flex: 8;
+        border: none;
+        outline: none;
+        background-color: transparent;
+        font-family: $proxima;
+        font-size: 0.9rem;
+
+        &::placeholder {
+          color: #fff;
+        }
+      }
+
+      button {
+        flex: 2;
+        font-size: 0.85rem;
+        padding: 0.75rem;
+        background-color: transparent;
+        color: #fff;
+        border-color: #fff;
+      }
+    }
+  }
+
+  .navigation__wrapper {
+    position: absolute;
+    bottom: -8.5%;
+    left: calc(10% - 1rem);
+    width: calc(80% + 2rem);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.card__wrapper {
+  margin: 0 1rem;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: #f9fafa;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
+  box-sizing: border-box;
+  padding: 1rem 0.25rem;
+  transition: 0.25s ease-in-out;
+  cursor: pointer;
+
+  svg {
+    color: #898989;
+    margin-bottom: 0.5rem;
+    font-size: 1.35rem;
+    transition: 0.25s ease-in-out;
+  }
+
+  span {
+    font-size: 1.15rem;
+    color: #212121;
+    font-weight: 600;
+    transition: 0.25s ease-in-out;
+  }
+
+  &:hover {
+    background-color: #212121;
+
+    svg {
+      color: #ff5722;
+    }
+
+    span {
+      color: #fff;
+    }
+  }
+}
+
+@media (max-width: 575.98px) {
+  .layout__wrapper {
+    margin-top: -5vh;
+    width: 100%;
+
+    img {
+      width: 100%;
+      height: 30vh;
+      object-fit: cover;
+    }
+
+    .searchbar__hero {
+      top: 25%;
+      width: 90%;
+
+      h5 {
+        font-size: 1.5rem;
+      }
+
+      .searchbar__wrapper {
+        padding: 0.75rem;
+
+        button {
+          display: none;
+        }
+      }
+    }
+
+    .navigation__wrapper {
+      bottom: -60%;
+      left: 10%;
+      width: 80%;
+      justify-content: space-between;
+      flex-wrap: wrap;
+
+      .card__wrapper {
+        width: 47.5%;
+        height: 6rem;
+        margin: 0;
+        flex: none;
+
+        &:first-of-type,
+        &:nth-of-type(2) {
+          margin-bottom: 2.5vw;
+        }
+
+        span {
+          font-size: 1rem;
+          width: 60%;
+        }
+      }
+    }
+  }
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) and (min-width: 576px) {
+  .layout__wrapper {
+    margin-top: -5vh;
+    width: 100%;
+
+    img {
+      width: 100%;
+      height: 30vh;
+      object-fit: cover;
+    }
+
+    .searchbar__hero {
+      top: 25%;
+      width: 90%;
+
+      h5 {
+        font-size: 1.5rem;
+      }
+
+      .searchbar__wrapper {
+        padding: 0.25rem;
+
+        button {
+          padding: 0.5rem 0.75rem;
+          font-size: 1rem;
+        }
+      }
+    }
+
+    .navigation__wrapper {
+      bottom: -60%;
+      left: 10%;
+      width: 80%;
+      justify-content: space-between;
+      flex-wrap: wrap;
+
+      .card__wrapper {
+        width: 47.5%;
+        height: 6rem;
+        margin: 0;
+        flex: none;
+
+        &:first-of-type,
+        &:nth-of-type(2) {
+          margin-bottom: 2.5vw;
+        }
+
+        span {
+          font-size: 1rem;
+          width: 60%;
+        }
+      }
+    }
+  }
+}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) and (min-width: 768px) {
+  .layout__wrapper {
+    margin-top: -5vh;
+    width: 100%;
+
+    img {
+      width: 100%;
+      height: 30vh;
+      object-fit: cover;
+    }
+
+    .searchbar__hero {
+      top: 25%;
+      width: 90%;
+
+      h5 {
+        font-size: 1.5rem;
+      }
+
+      .searchbar__wrapper {
+        padding: 0.25rem;
+
+        button {
+          padding: 0.5rem 0.75rem;
+          font-size: 1rem;
+        }
+      }
+    }
+
+    .navigation__wrapper {
+      bottom: -55%;
+      left: 10%;
+      width: 80%;
+      justify-content: space-between;
+      flex-wrap: wrap;
+
+      .card__wrapper {
+        width: 47.5%;
+        height: 6rem;
+        margin: 0;
+        flex: none;
+
+        &:first-of-type,
+        &:nth-of-type(2) {
+          margin-bottom: 2.5vw;
+        }
+
+        span {
+          font-size: 1rem;
+          width: 60%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1024.98px) and (min-width: 992px) {
+  .layout__wrapper {
+    margin-top: -5vh;
+    width: 100%;
+
+    img {
+      width: 100%;
+      height: 30vh;
+      object-fit: cover;
+    }
+
+    .searchbar__hero {
+      top: 25%;
+      width: 80%;
+
+      h5 {
+        font-size: 1.85rem;
+      }
+
+      .searchbar__wrapper {
+        padding: 0.5rem;
+
+        button {
+          padding: 0.75rem 0.75rem;
+          font-size: 1.35rem;
+          font-weight: 500;
+        }
+
+        input {
+          font-size: 1.25rem;
+        }
+
+        svg {
+          font-size: 1.85rem;
+        }
+      }
+    }
+
+    .navigation__wrapper {
+      bottom: -10%;
+      left: 10%;
+      width: 80%;
+      justify-content: space-between;
+      flex-wrap: wrap;
+
+      .card__wrapper {
+        width: calc(47.5% / 2);
+        height: 8rem;
+        margin: 0;
+        flex: none;
+        justify-content: center;
+        align-items: center;
+
+        &:first-of-type,
+        &:nth-of-type(2) {
+          margin-bottom: 0;
+        }
+
+        svg {
+          flex: 1;
+          font-size: 2rem;
+        }
+
+        span {
+          flex: 2;
+          font-size: 1.25rem;
+          width: 60%;
+        }
+      }
+    }
+  }
+}
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) {
+}

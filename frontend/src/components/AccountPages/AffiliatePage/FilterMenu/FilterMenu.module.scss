@@ -1,0 +1,52 @@
+@import "../../../../styles/variables";
+
+.filterMenu__container {
+  font-family: $proxima;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+
+  .products__viewBy__wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    .products__dropdown__wrapper {
+      margin-right: 2.5rem;
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+
+      label {
+        font-weight: 600;
+        font-size: 0.85rem;
+        color: #212121;
+        margin-bottom: 0.15rem;
+      }
+    }
+
+    .viewBy__dropdown__wrapper {
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+
+      label {
+        font-weight: 600;
+        font-size: 0.85rem;
+        color: #212121;
+        margin-bottom: 0.15rem;
+      }
+    }
+  }
+
+  .pageItems__dropdown__wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    label {
+      margin-right: 0.5rem;
+    }
+  }
+}

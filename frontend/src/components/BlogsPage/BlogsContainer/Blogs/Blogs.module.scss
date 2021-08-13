@@ -1,0 +1,14 @@
+@import "../../../../styles/variables";
+
+.container {
+  .blogsHeader,
+  .blogsFooter {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .blogsHeader {
+    margin-bottom: 7.5vh;
+  }
+}

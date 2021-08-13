@@ -1,0 +1,65 @@
+@import "../../../../styles/variables";
+
+.container {
+  font-family: $proxima;
+
+  h3 {
+    text-align: left;
+    margin-bottom: 2rem;
+  }
+
+  .table__wrapper {
+    margin-top: 2.5vh;
+
+    .tags {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      border-bottom: 1px solid #e7eaed;
+      box-sizing: border-box;
+      padding: 0.5rem 1rem;
+
+      span {
+        color: #898989;
+        font-size: 0.85rem;
+        flex: 1;
+        text-align: left;
+      }
+
+      .linkTag {
+        flex: 2;
+      }
+    }
+  }
+}
+
+// Commission Entry Styles
+
+.clickEntry__wrapper {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid #e7eaed;
+  box-sizing: border-box;
+  padding: 1rem 1rem;
+
+  span {
+    flex: 1;
+    text-align: left;
+  }
+
+  .status {
+    flex: 1;
+    text-align: left;
+    width: fit-content;
+  }
+
+  .status span {
+    width: fit-content;
+    box-sizing: border-box;
+    padding: 0.15rem 0.5rem;
+  }
+
+  .link {
+    flex: 2;
+  }
+}

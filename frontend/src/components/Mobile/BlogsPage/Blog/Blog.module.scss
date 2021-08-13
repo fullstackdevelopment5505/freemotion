@@ -1,0 +1,74 @@
+@import "../../../../styles/variables";
+
+.container {
+  font-family: $proxima;
+  width: 100%;
+  height: calc(100% - 0.75rem);
+  display: flex;
+  flex-direction: column;
+
+  &:nth-of-type(1),
+  &:nth-of-type(2) {
+    margin-bottom: 0;
+  }
+
+  .thumbnail__wrapper {
+    background-color: #898989;
+    padding: 7.5rem 10rem;
+    flex: 1;
+    border-radius: 4px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 0.75rem;
+
+    .readingTime__wrapper {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      background-color: #212121;
+      border-top-right-radius: 4px;
+      padding: 0.05vw 1.5vw 0.05vw 1.5vw;
+
+      span {
+        font-size: 0.9rem;
+        color: #fff;
+      }
+    }
+  }
+
+  .content__wrapper {
+    text-align: left;
+    color: #000;
+
+    span {
+      font-weight: 400;
+      font-size: 0.85rem;
+    }
+
+    h6 {
+      font-weight: 600;
+      font-size: 1rem;
+      margin: 0;
+    }
+  }
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+  .container {
+    .thumbnail__wrapper {
+      padding: 10rem;
+    }
+  }
+}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) and (min-width: 768px) {
+  .container {
+    width: 47.5%;
+
+    .thumbnail__wrapper {
+      padding: 10rem;
+    }
+  }
+}

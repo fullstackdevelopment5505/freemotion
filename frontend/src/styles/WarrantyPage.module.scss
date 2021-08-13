@@ -1,0 +1,15 @@
+@import "./variables";
+
+.container {
+  margin-left: 10%;
+  width: 60%;
+  font-family: $proxima;
+  text-align: left;
+}
+
+@media (max-width: 575.98px) {
+  .container {
+    width: 95%;
+    margin: 0 auto;
+  }
+}

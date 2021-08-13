@@ -1,0 +1,45 @@
+@import "../../../styles/variables";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  .reviews {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  button {
+    width: 20%;
+    padding: 0.75rem;
+    margin-left: auto;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .container {
+    width: 95%;
+    margin: 0 auto;
+    padding-bottom: 5vh;
+
+    button {
+      width: 40%;
+      border-radius: 4px;
+      padding: 0.5rem;
+    }
+  }
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {
+}
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) {
+}

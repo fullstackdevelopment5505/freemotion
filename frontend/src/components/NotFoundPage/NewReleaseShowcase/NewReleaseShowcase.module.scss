@@ -1,0 +1,112 @@
+@import "../../../styles/variables";
+
+.showcase__wrapper {
+  height: 70vh;
+  background-color: #f9fafa;
+
+  .showcase {
+    width: 80%;
+    height: 100%;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 4.5vh 0 3vh 0;
+
+    .products__container {
+      width: 100%;
+      padding: 1.5vh 0;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    .header {
+      font-family: $proxima;
+      width: 100%;
+      text-align: left;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+
+      h3 {
+        width: fit-content;
+        color: #000;
+        font-size: 26px;
+        text-align: left;
+        font-weight: 700;
+        margin: 0;
+      }
+
+      .controller {
+        width: 6%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        button {
+          background-color: transparent;
+          border-radius: 50%;
+          border: 2px solid #e5e5e5;
+          box-sizing: border-box;
+          padding: 0.75rem;
+          width: 2.25rem;
+          height: 2.25rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          transition: 0.25s ease-in-out;
+          outline: none;
+
+          svg {
+            font-size: 0.75rem;
+            color: #000;
+          }
+
+          &:first-of-type {
+            transform: rotate(45deg);
+
+            &:hover {
+              cursor: pointer;
+              border-bottom-color: #212121;
+              border-left-color: #212121;
+              transition: 0.25s ease-in-out;
+
+              svg {
+                color: #ff5722;
+                transition: 0.25s ease-in-out;
+              }
+            }
+
+            svg {
+              transition: 0.25s ease-in-out;
+              transform: rotate(-45deg);
+              margin-left: -2px;
+            }
+          }
+
+          &:last-of-type {
+            transform: rotate(-45deg);
+
+            &:hover {
+              cursor: pointer;
+              border-bottom-color: #212121;
+              border-right-color: #212121;
+              transition: 0.25s ease-in-out;
+
+              svg {
+                color: #ff5722;
+                transition: 0.25s ease-in-out;
+              }
+            }
+
+            svg {
+              transition: 0.25s ease-in-out;
+              transform: rotate(45deg);
+              margin-right: -2px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

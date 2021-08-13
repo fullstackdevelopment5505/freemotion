@@ -1,0 +1,63 @@
+@import "../styles/variables";
+
+.productsPage__container {
+  display: flex;
+  width: 82.5%;
+  margin: 0 auto;
+  flex-direction: row;
+  padding-bottom: 5vh;
+
+  .products__wrapper {
+    width: 80%;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .productsPage__container {
+    background-color: #fff;
+    width: 95%;
+    margin: 0 auto;
+
+    .products__wrapper {
+      width: 100%;
+    }
+  }
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+  .productsPage__container {
+    background-color: #fff;
+    width: 95%;
+    margin: 0 auto;
+
+    .products__wrapper {
+      width: 100%;
+    }
+  }
+}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) and (min-width: 768px) {
+  .productsPage__container {
+    width: 95%;
+    margin: 0 auto;
+
+    .products__wrapper {
+      width: 75%;
+    }
+  }
+}
+
+// Macbook Pro (Retina)
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+  .productsPage__container {
+    .products__wrapper {
+      width: 77.5%;
+    }
+  }
+}
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) {
+}

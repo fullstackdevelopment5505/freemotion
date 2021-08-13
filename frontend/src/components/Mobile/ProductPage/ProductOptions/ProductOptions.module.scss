@@ -1,0 +1,76 @@
+@import "../../../../styles/variables";
+
+.container {
+  font-family: $proxima;
+  color: #212121;
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-bottom: 5vh;
+
+  .options__wrapper {
+    .colors__options,
+    .wheelSize__options,
+    .quantity__wrapper {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid #e7eaed;
+      box-sizing: border-box;
+      padding: 0.6rem 0.25rem;
+      height: 3rem;
+
+      div {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: fit-content;
+      }
+
+      .left__col,
+      .stock {
+        span {
+          &:nth-of-type(2),
+          &:last-of-type {
+            color: #d9dcdf;
+            font-weight: 500;
+            font-size: 0.8rem;
+            margin-left: 0.25rem;
+            margin-bottom: -2px;
+          }
+        }
+      }
+    }
+
+    .quantity__wrapper {
+      .counter {
+        button {
+          width: 1.5rem;
+          height: 1.5rem;
+          border-radius: 50%;
+          border: none;
+          background-color: #f1f1f1;
+          outline: none;
+        }
+
+        span {
+          margin: 0 1rem;
+        }
+      }
+    }
+
+    .colors__options {
+      border-top: 1px solid #e7eaed;
+    }
+
+    .colors__options,
+    .wheelSize__options {
+      div {
+        svg {
+          margin-left: 0.35rem;
+          margin-bottom: -1px;
+        }
+      }
+    }
+  }
+}

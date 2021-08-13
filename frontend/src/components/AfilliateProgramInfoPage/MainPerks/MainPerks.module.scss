@@ -1,0 +1,170 @@
+@import "../../../styles/variables";
+
+.container {
+  font-family: $proxima;
+  background-color: #f9fafa;
+  box-sizing: border-box;
+  padding: 3.5rem 0 5rem;
+  color: #212121;
+  margin-bottom: 5rem;
+
+  .wrapper {
+    width: 80%;
+    margin: 0 auto;
+
+    h3 {
+      margin: 0;
+      margin-bottom: 5rem;
+    }
+
+    .steps__wrapper {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      .step {
+        span {
+          font-weight: 600;
+          color: #898989;
+          font-size: 1rem;
+          padding-bottom: 1rem;
+        }
+
+        .icon__wrapper {
+          margin-top: 1rem;
+          padding-top: 3rem;
+          position: relative;
+
+          .circle {
+            position: absolute;
+            left: 51.75%;
+            top: 0;
+            transform: translate(-50%);
+            width: 3.5rem;
+            height: 3.5rem;
+            background-color: #e6e6e6;
+            border-radius: 50%;
+            z-index: 1;
+          }
+
+          svg {
+            position: absolute;
+            left: 48.25%;
+            top: 0.75rem;
+            transform: translate(-50%);
+            z-index: 3;
+            width: 2rem;
+            height: 2rem;
+          }
+        }
+
+        p {
+          margin: 0 auto;
+          width: 40%;
+        }
+
+        h4 {
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 575.98px) {
+  .container {
+    .wrapper {
+      .steps__wrapper {
+        flex-direction: column;
+
+        .step {
+          span {
+            font-size: 1.15rem;
+          }
+
+          .icon__wrapper {
+            .circle {
+              width: 5rem;
+              height: 5rem;
+              left: 55%;
+            }
+
+            svg {
+              left: 45%;
+              top: 1.25rem;
+              width: 2.5rem;
+              height: 2.5rem;
+            }
+          }
+
+          h4 {
+            margin-top: 3.5rem;
+          }
+          p {
+            width: 90%;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) and (min-width: 576px) {
+  .container {
+    .wrapper {
+      .steps__wrapper {
+        flex-direction: column;
+
+        .step {
+          span {
+            font-size: 1.15rem;
+          }
+
+          .icon__wrapper {
+            .circle {
+              width: 5rem;
+              height: 5rem;
+              left: 55%;
+            }
+
+            svg {
+              left: 45%;
+              top: 1.25rem;
+              width: 2.5rem;
+              height: 2.5rem;
+            }
+          }
+
+          h4 {
+            margin-top: 3.5rem;
+          }
+          p {
+            width: 90%;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) and (min-width: 768px) {
+  .container {
+    .wrapper {
+      width: 90%;
+
+      .steps__wrapper {
+        .step {
+          h4 {
+            font-size: 1.25rem;
+          }
+
+          p {
+            width: 75%;
+          }
+        }
+      }
+    }
+  }
+}

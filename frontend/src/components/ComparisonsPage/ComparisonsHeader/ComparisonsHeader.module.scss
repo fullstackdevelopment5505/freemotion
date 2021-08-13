@@ -1,0 +1,39 @@
+@import "../../../styles/variables";
+
+.header__container {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 100%;
+  height: fit-content;
+  font-family: $proxima;
+
+  h2 {
+    font-size: 1.85rem;
+    font-weight: 700;
+    margin: 0;
+    margin-bottom: 0.5rem;
+  }
+
+  h2,
+  span {
+    color: #212121;
+  }
+
+  span {
+    font-size: 1rem;
+
+    &:first-of-type {
+      margin-bottom: 0.25rem;
+    }
+
+    &:last-of-type {
+      text-decoration: underline;
+
+      &:hover {
+        cursor: pointer;
+        color: #676767;
+      }
+    }
+  }
+}

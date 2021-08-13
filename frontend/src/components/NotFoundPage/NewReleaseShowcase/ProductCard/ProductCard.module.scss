@@ -1,0 +1,132 @@
+@import "../../../../styles/variables";
+
+.productCard__wrapper {
+  background-color: #fff;
+  box-sizing: border-box;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  width: 33%;
+
+  .image__wrapper {
+    margin-bottom: 5rem;
+  }
+
+  .textContent__wrapper {
+    display: flex;
+    font-family: $proxima;
+    flex-direction: column;
+
+    .header {
+      justify-self: flex-start;
+      align-self: flex-start;
+
+      h2 {
+        margin: 0;
+        font-weight: 400;
+        font-size: 18px;
+        color: #212121;
+      }
+
+      .review__wrapper {
+        width: fit-content;
+        font-size: 14px;
+        font-weight: 400;
+
+        .reviewStars {
+          margin-left: 0.35rem;
+          display: inline;
+
+          svg {
+            color: #fcc455;
+          }
+        }
+      }
+    }
+
+    .footer {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-end;
+
+      .price__wrapper {
+        justify-content: flex-end;
+        margin-top: 1.5rem;
+        display: flex;
+        flex-direction: column;
+
+        span {
+          font-weight: 400;
+          font-size: 18px;
+        }
+
+        .oldPrice__wrapper {
+          margin-bottom: 0.45rem;
+
+          span {
+            color: #b5b5b5;
+          }
+
+          div {
+            margin-top: -10px;
+            margin-left: -8px;
+            width: 5.75rem;
+            height: 1.1px;
+            background-color: #b5b5b5;
+            transform: rotatez(-10deg);
+          }
+        }
+      }
+
+      .purchase__wrapper {
+        margin-top: auto;
+        display: flex;
+        flex-direction: row;
+        justify-self: flex-end;
+        align-items: flex-end;
+        align-items: center;
+
+        svg {
+          color: #898989;
+          font-size: 1.45rem;
+          transition: 0.25s ease-in-out;
+
+          &:hover {
+            cursor: pointer;
+            color: #ff5722;
+            transition: 0.25s ease-in-out;
+          }
+        }
+
+        .wrapper {
+          margin-top: -2px;
+
+          svg {
+            font-size: 0.75rem;
+            color: #898989;
+            transform: translate(0);
+            transition: 0.25s ease-in-out;
+          }
+
+          &:hover {
+            cursor: pointer;
+
+            svg {
+              transform: translate(10px);
+              color: #ff5722;
+              transition: 0.25s ease-in-out;
+            }
+          }
+        }
+
+        span {
+          margin: 0 0.5rem;
+          font-size: 18px;
+          color: #ff5722;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,39 @@
+@import "../../../../styles/variables";
+
+.orders__container {
+  width: 80vw;
+  padding: 0 0 5.25rem 4rem;
+  font-family: $proxima;
+
+  h2 {
+    color: #212121;
+    font-size: 1.65rem;
+    margin: 0;
+    text-align: left;
+    margin-bottom: 2.5rem;
+  }
+
+  .ordersTags {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0 0 1rem 0;
+    border-bottom: 1px solid #e7eaed;
+
+    span {
+      flex: 1;
+      text-align: left;
+      color: #898989;
+      font-size: 0.85rem;
+      font-weight: 600;
+    }
+  }
+
+  .orders__wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+}

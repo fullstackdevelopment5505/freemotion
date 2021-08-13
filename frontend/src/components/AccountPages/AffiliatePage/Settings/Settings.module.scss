@@ -1,0 +1,124 @@
+@import "../../../../styles/variables";
+
+.container {
+  font-family: $proxima;
+  text-align: left;
+
+  .form__wrapper {
+    form {
+      color: #212121;
+
+      label {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        span {
+          color: #212121;
+          font-weight: 600;
+          font-size: 0.85rem;
+          margin-right: 0.25rem;
+        }
+
+        svg {
+          width: 0.95rem;
+          height: 0.95rem;
+          margin-bottom: -3px;
+        }
+      }
+
+      input {
+        border: 1px solid #d9dcdf;
+        border-radius: 6px;
+        box-sizing: border-box;
+        padding: 0.65rem 0.75rem;
+        outline-color: #333;
+        font-family: $proxima;
+        margin-bottom: 3.5vh;
+        color: #212121;
+        width: 35%;
+      }
+
+      .checkbox__wrapper {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-left: 0.1rem;
+
+        &:first-of-type {
+          margin-bottom: 1rem;
+        }
+
+        &:last-of-type {
+          margin-bottom: 5vh;
+        }
+
+        input {
+          width: fit-content;
+          margin: 0;
+          margin-right: 0.5rem;
+          transform: scale(1.35);
+        }
+
+        label {
+          span {
+            color: #212121;
+            font-weight: 500;
+            font-size: 0.95rem;
+            margin-right: 0.25rem;
+          }
+
+          svg {
+            width: 0.95rem;
+            height: 0.95rem;
+            margin-bottom: -2px;
+          }
+        }
+      }
+
+      button {
+        width: 20%;
+        font-size: 1.25rem;
+        padding: 0.5rem;
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+@media (max-width: 575.98px) {
+  .container {
+    margin-bottom: 0.5rem;
+
+    .form__wrapper {
+      form {
+        input {
+          width: 100%;
+        }
+
+        button {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+  .container {
+    margin-bottom: 0.5rem;
+
+    .form__wrapper {
+      form {
+        input {
+          width: 100%;
+        }
+
+        button {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,136 @@
+@import "./variables";
+
+.container {
+  font-family: $proxima;
+  padding: 5vh 0;
+  text-align: left;
+  width: 60%;
+  margin-left: 10%;
+
+  .header {
+    margin-bottom: 3.5rem;
+
+    h2,
+    p {
+      margin: 0;
+      color: #212121;
+    }
+
+    h2 {
+      margin-bottom: 1rem;
+    }
+
+    p {
+      line-height: 1.85rem;
+      width: 52.5%;
+    }
+  }
+
+  .wrapper {
+    display: flex;
+    flex-direction: row;
+
+    .guide__container {
+      margin-left: 5rem;
+      flex: 5;
+    }
+  }
+}
+
+@media (max-width: 575.98px) {
+  .container {
+    padding: 0;
+    width: 95%;
+    margin: 0 auto;
+
+    .header {
+      p {
+        width: 100%;
+      }
+    }
+
+    .wrapper {
+      flex-direction: column;
+
+      .guide__container {
+        margin: 0;
+      }
+    }
+  }
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) and (min-width: 576px) {
+  .container {
+    padding: 0;
+    width: 95%;
+    margin: 0 auto;
+
+    .header {
+      p {
+        width: 100%;
+      }
+    }
+
+    .wrapper {
+      flex-direction: column;
+
+      .guide__container {
+        margin: 0;
+      }
+    }
+  }
+}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) and (min-width: 768px) {
+  .container {
+    padding: 0;
+    width: 95%;
+    margin: 0 auto;
+
+    .header {
+      p {
+        width: 100%;
+      }
+    }
+
+    .wrapper {
+      flex-direction: column;
+
+      .guide__container {
+        margin: 0;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 1024.98px) and (min-width: 992px)  {
+  .container {
+    width: 95%;
+    margin: 0 auto;
+
+    .header {
+      h2 {
+        font-size: 2.5rem;
+      }
+
+      p {
+        width: 100%;
+        font-size: 1.65rem;
+      }
+    }
+
+    .wrapper {
+      .guide__container {
+        margin-left: 0;
+        box-sizing: border-box;
+      }
+    }
+  }
+}
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) {
+}

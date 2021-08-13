@@ -1,0 +1,17 @@
+<svg width="67" height="52" viewBox="0 0 67 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M43.2999 47.7C56.2999 47.7 67 37.1 67 24C67 11 56.3999 0.400024 43.2999 0.400024C30.1999 0.400024 19.7 11 19.7 24.1C19.7 37.1 30.2999 47.7 43.2999 47.7Z" fill="#F1F1F1"/>
+<g clip-path="url(#clip0)">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M0 29L22.4 51.2L50.1 23.7L46.6 4.8L27.7 1.3L0 29Z" fill="white"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M19.1 30.3H25.7V41.5H30.9L22.4 50.2L13.8 41.5H19.1V30.3Z" fill="#FF5722" stroke="#333333" stroke-width="1.5" stroke-miterlimit="10"/>
+<path d="M4.30001 33.3L3.80001 32.8C1.70001 30.7 1.70001 27.3 3.80001 25.2L25.8 3.30001C27 2.10001 28.8 1.50001 30.6 1.80001L43 4.10001C45.2 4.50001 46.9 6.20001 47.3 8.40001L49.6 20.8C49.9 22.5 49.4 24.3 48.1 25.6L40.4 33.2" stroke="#333333" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"/>
+<path d="M41.6 10.2C42.9 11.5 42.9 13.7 41.6 15C40.3 16.3 38.1 16.3 36.8 15C35.5 13.7 35.5 11.5 36.8 10.2C38.1 8.90001 40.3 8.90001 41.6 10.2Z" stroke="#333333" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"/>
+<path d="M30.2 12.3L12.2 30.3" stroke="#333333" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"/>
+<path d="M35 18L26 27" stroke="#333333" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"/>
+<path d="M40 23L31 32" stroke="#333333" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"/>
+</g>
+<defs>
+<clipPath id="clip0">
+<rect width="50.5" height="50.3" fill="white" transform="translate(0 1)"/>
+</clipPath>
+</defs>
+</svg>

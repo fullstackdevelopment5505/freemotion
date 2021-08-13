@@ -1,0 +1,132 @@
+@import "../../../styles/variables";
+
+.selected div svg path {
+  stroke: #ff5722;
+}
+
+.overshadow {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 10;
+
+  .modal__wrapper {
+    font-family: $proxima;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    height: 60vh;
+    border-radius: 4px;
+
+    .header {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      box-sizing: border-box;
+      padding: 1.25rem 2rem;
+      border-bottom: 1px solid #e7eaed;
+      margin-bottom: 0.35rem;
+
+      h4 {
+        font-weight: 700;
+        font-size: 1.35rem;
+        color: #212121;
+        margin: 0;
+      }
+
+      svg {
+        color: #212121;
+        font-size: 1.25rem;
+        transition: 0.25s ease-in-out;
+
+        &:hover {
+          cursor: pointer;
+          color: #898989;
+        }
+      }
+    }
+
+    .wrapper {
+      overflow-y: auto;
+      display: flex;
+      flex-direction: column;
+      box-sizing: border-box;
+      padding: 2rem;
+      height: 100%;
+      padding-top: 0.5rem;
+      text-align: left;
+
+      &::-webkit-scrollbar {
+        width: 5px;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        border-radius: 12px;
+        background-color: #c2c2c2;
+      }
+
+      .productCategories__nav {
+        width: 75%;
+        margin-bottom: 1rem;
+
+        ul {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          width: 100%;
+          justify-content: space-between;
+
+          li {
+            &:hover {
+              cursor: pointer;
+            }
+
+            border-bottom: 1px solid transparent;
+            color: #212121;
+            transition: 0.25s ease-in-out;
+          }
+        }
+      }
+
+      .products__container {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+    }
+
+    .footer {
+      width: calc(100% - 2.35rem);
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      padding: 1rem 0;
+
+      .buttons__wrapper {
+        width: 45%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        button {
+          padding: 0.65rem;
+          font-weight: 500;
+          width: calc(50% - 0.5rem);
+        }
+      }
+    }
+  }
+}

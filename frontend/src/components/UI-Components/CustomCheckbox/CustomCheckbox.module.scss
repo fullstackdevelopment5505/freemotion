@@ -1,0 +1,22 @@
+@import "../../../styles/variables";
+
+.checkbox__wrapper {
+  margin-right: 0.35rem;
+
+  div {
+    padding: 0 !important;
+  }
+
+  .checkbox__box {
+    width: 0.75rem;
+    height: 0.75rem;
+    background-color: #fff;
+    border: 1px solid;
+    border-radius: 2px;
+
+    div {
+      width: 0.75rem !important;
+      height: 0.75rem !important;
+    }
+  }
+}

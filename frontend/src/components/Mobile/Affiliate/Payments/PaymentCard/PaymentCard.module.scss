@@ -1,0 +1,62 @@
+@import "../../../../../styles/variables";
+
+.container {
+  font-family: $proxima;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.5rem;
+  box-sizing: border-box;
+  padding: 0.75rem;
+  border: 1px solid #e7eaed;
+  border-radius: 4px;
+
+  .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+
+    span {
+      color: #212121;
+
+      &:first-of-type {
+        color: #898989;
+        font-size: 0.85rem;
+        margin-bottom: 0.35rem;
+      }
+    }
+
+    &:not(:last-of-type) {
+      margin-bottom: 1rem;
+    }
+
+    &:nth-of-type(2) {
+      flex-direction: column;
+      text-align: left;
+    }
+
+    div {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+
+      span {
+        color: #212121;
+
+        &:first-of-type {
+          color: #898989;
+          font-size: 0.85rem;
+          margin-bottom: 0.35rem;
+        }
+      }
+
+      .status {
+        display: block;
+        width: fit-content;
+        box-sizing: border-box;
+        padding: 0.0625rem 0.75rem;
+      }
+    }
+  }
+}

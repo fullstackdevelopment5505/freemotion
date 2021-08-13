@@ -1,0 +1,230 @@
+@import "./variables";
+
+.login__wrapper {
+  padding: 10rem 0;
+  display: flex;
+  flex-direction: row;
+  width: 60%;
+  margin: 0 auto;
+  font-family: $proxima;
+
+  .form__wrapper {
+    display: flex;
+    flex-direction: column;
+    flex: 3;
+
+    h2 {
+      margin: 0;
+      text-align: left;
+      margin-bottom: 4rem;
+      font-size: 2rem;
+      font-weight: 700;
+      color: #212121;
+    }
+  }
+
+  .banner__wrapper {
+    flex: 5;
+    margin: 0 0 0 6rem;
+    position: relative;
+    height: fit-content;
+
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+      border-radius: 6px;
+    }
+
+    .banner__textContent {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      box-sizing: border-box;
+      padding: 2.5rem;
+      text-align: left;
+
+      h4 {
+        margin: 0;
+        flex: 2;
+        font-size: 1.75rem;
+        font-weight: 700;
+      }
+
+      p {
+        margin: 0;
+        flex: 5;
+        font-size: 1.15rem;
+        font-weight: 400;
+        width: 70%;
+      }
+
+      p,
+      h4 {
+        color: #fff;
+      }
+
+      button {
+        width: 70%;
+        background-color: transparent;
+        border-color: #fff;
+        color: #fff;
+        padding: 0.85rem;
+        font-size: 1rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 575.98px) {
+  .login__wrapper {
+    padding: 0 0 5vh 0;
+    width: 95%;
+    margin: 0 auto;
+    flex-direction: column;
+
+    .form__wrapper {
+      margin-bottom: 5vh;
+    }
+
+    .banner__wrapper {
+      flex: unset;
+      margin: 0;
+
+      .banner__textContent {
+        h4 {
+          font-size: 1.65rem;
+        }
+
+        p {
+          font-size: 1.1rem;
+          width: 100%;
+        }
+
+        button {
+          padding: 0.75rem;
+          font-weight: 500;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) and (min-width: 576px) {
+  .login__wrapper {
+    width: 95%;
+    margin: 0 auto;
+    padding: 0 0 5rem 0;
+    flex-direction: column;
+
+    .form__wrapper {
+      margin-bottom: 5vh;
+      flex: none;
+    }
+
+    .banner__wrapper {
+      flex: none;
+      margin: 0;
+      height: fit-content;
+      height: fit-content;
+
+      img {
+        height: 80vw;
+        object-fit: cover;
+      }
+
+      .banner__textContent {
+        width: fit-content;
+        height: fit-content;
+
+        h4 {
+          font-size: 1.65rem;
+          margin-bottom: 0.75rem;
+          flex: none;
+        }
+
+        p {
+          flex: none;
+          font-size: 1.1rem;
+          width: 100%;
+          margin-bottom: 62.5%;
+        }
+
+        button {
+          padding: 0.75rem;
+          font-weight: 500;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) and (min-width: 768px) {
+  .login__wrapper {
+    width: 95%;
+    margin: 0 auto;
+    padding: 0 0 5rem 0;
+    flex-direction: column;
+
+    .form__wrapper {
+      margin-bottom: 5vh;
+      flex: none;
+    }
+
+    .banner__wrapper {
+      flex: none;
+      margin: 0;
+      height: fit-content;
+      height: fit-content;
+
+      img {
+        height: 80vw;
+        object-fit: cover;
+      }
+
+      .banner__textContent {
+        width: fit-content;
+        height: fit-content;
+
+        h4 {
+          font-size: 1.65rem;
+          margin-bottom: 0.75rem;
+          flex: none;
+        }
+
+        p {
+          flex: none;
+          font-size: 1.1rem;
+          width: 100%;
+          margin-bottom: 62.5%;
+        }
+
+        button {
+          padding: 0.75rem;
+          font-weight: 500;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1024.98px) and (min-width: 992px)  {
+  .login__wrapper {
+    width: 95%;
+    margin: 0 auto;
+    padding: 0 0 5rem 0;
+  }
+}
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) {
+}

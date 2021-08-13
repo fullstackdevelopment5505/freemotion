@@ -1,0 +1,515 @@
+@import "../../styles/variables";
+
+.header {
+  font-family: $proxima;
+  width: 100%;
+  margin-bottom: 5vh;
+
+  .top__wrapper,
+  .bottom__wrapper {
+    width: 100%;
+  }
+
+  .bottom__wrapper {
+    border-bottom: 1px solid #e7eaed;
+  }
+
+  .top__wrapper {
+    background-color: #333;
+    color: $white;
+  }
+
+  .top,
+  .bottom {
+    margin: 0 auto;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    ul {
+      list-style-type: none;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  .top {
+    box-sizing: border-box;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #fff;
+
+    .wrapper {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      svg {
+        margin-right: 0.4rem;
+        margin-top: 0.3rem;
+      }
+    }
+
+    .shipping__info {
+      font-size: 12px;
+      font-weight: 400;
+    }
+
+    .column__wrapper {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      div {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+      }
+
+      .call__wrapper {
+        padding: 0.05rem 0.5rem;
+        margin-right: 0.75rem;
+
+        svg,
+        a {
+          margin: 0 0.35rem;
+        }
+
+        a {
+          font-size: 0.95rem;
+          text-decoration: none;
+          color: #fff;
+        }
+      }
+
+      .avatar__wrapper {
+        border-right: none;
+
+        a {
+          svg,
+          svg path {
+            transition: 0.25s ease-in-out;
+          }
+
+          svg:hover {
+            path {
+              stroke: #ff5722;
+            }
+          }
+        }
+      }
+
+      ul {
+        border-right: 1px solid #757575;
+        margin: 0;
+
+        li {
+          margin: 0 0.75rem;
+
+          a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 400;
+            font-size: 14px;
+          }
+
+          &:hover {
+            cursor: pointer;
+
+            a {
+              color: #ff5722;
+              transition: 0.25s ease-in-out;
+            }
+          }
+        }
+      }
+
+      .currency__wrapper {
+        z-index: 1;
+        overflow: hidden;
+        padding: 1.75vh 1rem;
+        font-size: 14px;
+        height: 100%;
+        transition: 0.25s ease-in-out;
+
+        span {
+          transition: 0.25s ease-in-out;
+          margin: 0 0.5rem 0 0.25rem;
+        }
+
+        svg {
+          color: #bdbdbd;
+        }
+
+        &:hover {
+          cursor: pointer;
+          background-color: #fff;
+
+          span {
+            color: #212121;
+          }
+        }
+      }
+
+      .call__wrapper {
+        padding: 0.05rem 0.5rem;
+        border-left: 1px solid #757575;
+        border-right: 1px solid #757575;
+
+        span {
+          font-size: 14px;
+          font-weight: 600;
+        }
+
+        span:first-of-type {
+          font-weight: 400;
+        }
+      }
+    }
+  }
+
+  .bottom {
+    box-sizing: border-box;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #fff;
+
+    .leftCol {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      flex: 13;
+
+      .logo {
+        margin-right: 3.75rem;
+      }
+
+      ul {
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+        padding: 0;
+
+        a {
+          text-decoration: none;
+          color: #212121;
+
+          li {
+            margin-right: 2.5rem;
+            padding: 1.75vh 0.25rem;
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid transparent;
+            transition: 0.25s ease-in-out;
+
+            span {
+              text-decoration: none;
+              color: #212121;
+              text-transform: uppercase;
+              font-weight: 700;
+              font-size: 0.9rem;
+              margin-right: 0.35rem;
+            }
+
+            svg {
+              font-size: 0.75rem;
+              transition: 0.25s ease-in-out;
+            }
+
+            &:hover {
+              cursor: pointer;
+              border-color: #ff5722;
+
+              span,
+              svg {
+                color: #ff5722;
+                transition: 0.25s ease-in-out;
+              }
+
+              svg {
+                transform: rotatex(180deg);
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .rightCol {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      flex: 6;
+
+      .socialIcons {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        div {
+          margin: 0 0.25rem;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: center;
+          border-radius: 50%;
+          width: 2rem;
+          height: 2rem;
+          text-align: center;
+
+          &:hover {
+            svg {
+              color: #fff;
+            }
+          }
+
+          svg {
+            width: 1rem !important;
+            height: 1rem !important;
+            object-fit: contain;
+            color: #000;
+          }
+        }
+
+        .instagramIcon,
+        .facebookIcon,
+        .twitterIcon,
+        .youtubeIcon {
+          background: #f1f1f1;
+          transition: 0.25s ease-in-out;
+
+          svg,
+          svg path {
+            transition: 0.25s ease-in-out;
+          }
+
+          &:hover {
+            cursor: pointer;
+            path {
+              color: #fff;
+              fill: #fff;
+            }
+          }
+        }
+
+        .instagramIcon {
+          &:hover {
+            background: linear-gradient(
+              50.96deg,
+              #f5d606 14.58%,
+              #f10917 50.23%,
+              #7a39a6 85.14%
+            );
+
+            svg {
+              color: #fff;
+
+              path {
+                color: #fff;
+                fill: #fff;
+              }
+            }
+          }
+        }
+
+        .facebookIcon {
+          &:hover {
+            background: linear-gradient(180deg, #17aafc 0%, #0064e0 100%);
+
+            svg {
+              color: #fff;
+
+              path {
+                color: #fff;
+                fill: #fff;
+              }
+            }
+          }
+        }
+
+        .twitterIcon {
+          &:hover {
+            background: #50abf1;
+
+            svg {
+              color: #fff;
+
+              path {
+                color: #fff;
+                fill: #fff;
+              }
+            }
+          }
+        }
+
+        .youtubeIcon {
+          &:hover {
+            background: #f03737;
+
+            svg {
+              color: #fff;
+
+              path {
+                color: #fff;
+                fill: #fff;
+              }
+            }
+          }
+        }
+      }
+
+      .searchbar__wrapper {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background-color: #fff;
+        border: 1px solid #e7eaed;
+        box-sizing: border-box;
+        padding: 0.35rem;
+        border-radius: 4px;
+        margin: 0 0.65rem;
+
+        input {
+          font-family: $proxima;
+          border: none;
+          outline: none;
+          color: #9a9a9a;
+          font-weight: 400;
+          font-size: 14px;
+        }
+      }
+
+      .options__wrapper {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        flex: 1;
+        position: relative;
+        justify-content: space-around;
+
+        svg {
+          color: #212121;
+          object-fit: contain;
+          width: 1.35rem !important;
+          height: 1.35rem !important;
+          margin-right: 0.75rem;
+          margin-bottom: -0.125rem;
+
+          path {
+            stroke: #212121;
+            transition: 0.25s ease-in-out;
+          }
+
+          &:hover {
+            path {
+              stroke: #ff5722;
+            }
+          }
+        }
+
+        .wishlist__wrapper {
+          margin-left: -0.45rem;
+          position: relative;
+
+          svg {
+            margin: 0;
+          }
+
+          .numWishlistItems {
+            background-color: #212121;
+            right: -0.4rem;
+            top: -0.25rem;
+            position: absolute;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            width: 0.95rem;
+            height: 0.95rem;
+
+            span {
+              font-size: 0.75rem;
+              font-weight: 400;
+              color: #fff;
+            }
+          }
+        }
+
+        .cart__wrapper {
+          margin-right: -0.45rem;
+          position: relative;
+
+          svg {
+            margin: 0;
+          }
+
+          .numCartItems {
+            background-color: #ff5722;
+            right: -0.35rem;
+            top: -0.25rem;
+            position: absolute;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            width: 0.95rem;
+            height: 0.95rem;
+
+            span {
+              font-size: 0.75rem;
+              font-weight: 400;
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 575.98px) {
+  .header {
+    display: none;
+  }
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) and (min-width: 576px) {
+  .header {
+    display: none;
+  }
+}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) and (min-width: 768px) {
+  .header {
+    display: none;
+  }
+}
+
+@media (max-width: 1024.98px) and (min-width: 992px) {
+  .header {
+    display: none;
+  }
+}
+
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+  .header {
+    .bottom {
+      .rightCol {
+        flex: 10;
+      }
+    }
+  }
+}
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) {
+}

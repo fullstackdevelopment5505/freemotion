@@ -1,0 +1,517 @@
+@import "../../../../styles/variables";
+
+.container {
+  font-family: $proxima;
+
+  h3 {
+    text-align: left;
+  }
+
+  .cards__container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10vh;
+
+    .balanceCard,
+    .visitorsCard,
+    .earningsCard {
+      border-radius: 6px;
+      overflow: hidden;
+      width: calc(100% / 3 - 0.75rem);
+      height: 12rem;
+    }
+
+    .balanceCard {
+      background-color: #19bdb7;
+      color: #fff;
+      margin-right: 0.75rem;
+
+      .header {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        background: rgba(0, 0, 0, 0.05);
+        border-radius: 4px 4px 0px 0px;
+        justify-content: space-between;
+        box-sizing: border-box;
+        padding: 0.75rem;
+
+        .leftCol {
+          text-align: left;
+          display: flex;
+          flex-direction: column;
+          text-align: left;
+
+          span {
+            line-height: 1.15rem;
+            font-size: 0.85rem;
+            font-weight: 400;
+
+            &:first-of-type {
+              font-weight: 600;
+            }
+          }
+        }
+
+        div:not(.leftCol) {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+
+          span {
+            margin-right: 0.75rem;
+          }
+        }
+      }
+
+      .card__content {
+        box-sizing: border-box;
+        padding: 1.25rem 0.75rem 0.75rem 0.75rem;
+        text-align: left;
+
+        p {
+          margin: 0;
+
+          &:first-of-type {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+          }
+        }
+      }
+    }
+
+    .visitorsCard {
+      background-color: #7a0d89;
+      margin: 0 0.75rem;
+      color: #fff;
+
+      .header {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        background: rgba(0, 0, 0, 0.05);
+        border-radius: 4px 4px 0px 0px;
+        box-sizing: border-box;
+        padding: 0.75rem;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+
+        span {
+          line-height: 1.15rem;
+          font-size: 0.85rem;
+          font-weight: 400;
+
+          &:first-of-type {
+            font-weight: 600;
+          }
+        }
+      }
+
+      .card__content {
+        box-sizing: border-box;
+        padding: 1.25rem 0.75rem 0.75rem 0.75rem;
+        text-align: left;
+
+        p {
+          margin: 0;
+
+          &:first-of-type {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+          }
+        }
+      }
+    }
+
+    .earningsCard {
+      margin-left: 0.75rem;
+      background-color: #efefef;
+      display: flex;
+      flex-direction: column;
+      color: #212121;
+
+      .header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        box-sizing: border-box;
+        padding: 0.75rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        .wrapper {
+          display: flex;
+          flex-direction: column;
+          text-align: left;
+
+          span {
+            line-height: 1.5rem;
+            font-weight: 600;
+          }
+        }
+      }
+
+      .footer {
+        box-sizing: border-box;
+        padding: 0.75rem;
+        justify-self: flex-end;
+        margin-top: auto;
+
+        div {
+          display: flex;
+          flex-direction: column;
+          text-align: left;
+
+          span {
+            line-height: 1.5rem;
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
+
+  .recentCommissions__container {
+    margin-bottom: 15vh;
+    color: #212121;
+
+    h3 {
+      text-align: left;
+    }
+
+    .table__wrapper {
+      .tags {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        border-bottom: 1px solid #e7eaed;
+        box-sizing: border-box;
+        padding: 0.5rem 1rem;
+
+        span {
+          color: #898989;
+          font-size: 0.85rem;
+          flex: 1;
+          text-align: left;
+        }
+      }
+    }
+
+    .commissionEntries__container {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  .recentClicks__container {
+    color: #212121;
+
+    h3 {
+      text-align: left;
+    }
+
+    .table__wrapper {
+      .tags {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        border-bottom: 1px solid #e7eaed;
+        box-sizing: border-box;
+        padding: 0.5rem 1rem;
+
+        span {
+          color: #898989;
+          font-size: 0.85rem;
+          flex: 1;
+          text-align: left;
+        }
+      }
+    }
+
+    .recentClicksEntries__container {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  .mobileAffiliateInfo {
+    display: none;
+  }
+}
+
+// Commission Entry Styles
+
+.commissionEntry__wrapper {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid #e7eaed;
+  box-sizing: border-box;
+  padding: 0.5rem 1rem;
+
+  span {
+    flex: 1;
+    text-align: left;
+  }
+}
+
+// Recent Clicks Entry Styles
+
+.recentClicksEntry__wrapper {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid #e7eaed;
+  box-sizing: border-box;
+  padding: 0.5rem 1rem;
+
+  span {
+    flex: 1;
+    text-align: left;
+  }
+}
+
+// Empty Rcent Clicks Styles
+
+.emptyRecentClicks {
+  border-bottom: 1px solid #e7eaed;
+  box-sizing: border-box;
+  padding: 0.5rem 1rem;
+  text-align: center;
+
+  h5 {
+    font-size: 1rem;
+    margin: 0.75rem 0;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .container {
+    .cards__container {
+      flex-direction: column;
+
+      .balanceCard,
+      .visitorsCard,
+      .earningsCard {
+        width: 100%;
+      }
+
+      .balanceCard {
+        margin-right: 0;
+        margin-bottom: 0.5rem;
+      }
+
+      .visitorsCard {
+        margin: 0;
+        margin-bottom: 0.5rem;
+      }
+
+      .earningsCard {
+        margin-left: 0;
+      }
+    }
+
+    .recentCommissions__container {
+      display: none;
+    }
+
+    .recentClicks__container {
+      display: none;
+    }
+
+    .mobileAffiliateInfo {
+      display: flex;
+      flex-direction: column;
+      color: #212121;
+
+      .top {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        margin-bottom: 1rem;
+
+        span {
+          font-size: 0.85rem;
+          font-weight: 500;
+          margin-right: 2.5rem;
+
+          &:last-of-type {
+            margin: 0;
+            font-size: 1.65rem;
+            font-weight: 600;
+          }
+        }
+      }
+
+      .middle {
+        text-align: left;
+
+        .url__placeholder {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-between;
+          border: 1px solid #d9dcdf;
+          box-sizing: border-box;
+          padding: 0.5rem 0.75rem;
+          border-radius: 4px;
+          margin-bottom: 1rem;
+
+          span {
+            color: #000;
+          }
+
+          svg {
+            margin-bottom: -4px;
+          }
+        }
+
+        .icons__wrapper {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          width: 5rem;
+          margin-left: auto;
+          justify-content: space-between;
+          margin-bottom: 1.5rem;
+        }
+      }
+    }
+
+    .recentCommisions__card,
+    .recentClicks__card {
+      border: 1px solid #e7eaed;
+      border-radius: 4px;
+      box-sizing: border-box;
+      padding: 0.75rem;
+      text-align: left;
+      margin-bottom: 0.5rem;
+
+      h3 {
+        margin: 0.25rem 0 0.75rem 0;
+      }
+
+      p {
+        margin-bottom: 0.25rem;
+      }
+    }
+  }
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+  .container {
+    .cards__container {
+      flex-direction: column;
+
+      .balanceCard,
+      .visitorsCard,
+      .earningsCard {
+        width: 100%;
+      }
+
+      .balanceCard {
+        margin-right: 0;
+        margin-bottom: 0.5rem;
+      }
+
+      .visitorsCard {
+        margin: 0;
+        margin-bottom: 0.5rem;
+      }
+
+      .earningsCard {
+        margin-left: 0;
+      }
+    }
+
+    .recentCommissions__container {
+      display: none;
+    }
+
+    .recentClicks__container {
+      display: none;
+    }
+
+    .mobileAffiliateInfo {
+      display: flex;
+      flex-direction: column;
+      color: #212121;
+
+      .top {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        margin-bottom: 1rem;
+
+        span {
+          font-size: 0.85rem;
+          font-weight: 500;
+          margin-right: 2.5rem;
+
+          &:last-of-type {
+            margin: 0;
+            font-size: 1.65rem;
+            font-weight: 600;
+          }
+        }
+      }
+
+      .middle {
+        text-align: left;
+
+        .url__placeholder {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-between;
+          border: 1px solid #d9dcdf;
+          box-sizing: border-box;
+          padding: 0.5rem 0.75rem;
+          border-radius: 4px;
+          margin-bottom: 1rem;
+
+          span {
+            color: #000;
+          }
+
+          svg {
+            margin-bottom: -4px;
+          }
+        }
+
+        .icons__wrapper {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          width: 5rem;
+          margin-left: auto;
+          justify-content: space-between;
+          margin-bottom: 1.5rem;
+        }
+      }
+    }
+
+    .recentCommisions__card,
+    .recentClicks__card {
+      border: 1px solid #e7eaed;
+      border-radius: 4px;
+      box-sizing: border-box;
+      padding: 0.75rem;
+      text-align: left;
+      margin-bottom: 0.5rem;
+
+      h3 {
+        margin: 0.25rem 0 0.75rem 0;
+      }
+
+      p {
+        margin-bottom: 0.25rem;
+      }
+    }
+  }
+}

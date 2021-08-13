@@ -1,0 +1,38 @@
+@import "../../../styles/variables";
+
+.container {
+  width: 100%;
+
+  .blogs__container {
+    margin-top: 2.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .container {
+    height: fit-content;
+    padding-bottom: 2.5vh;
+
+    .blogs__container {
+      height: fit-content;
+
+      min-width: 95vw;
+      overflow-x: auto;
+    }
+  }
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {
+}
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) {
+}

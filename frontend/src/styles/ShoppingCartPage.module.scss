@@ -1,0 +1,145 @@
+@import "./variables";
+
+.cart__container {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 15vh;
+
+  .wrapper {
+    display: flex;
+    flex-direction: row;
+
+    .cart__mainInterface__wrapper {
+      width: 60%;
+    }
+
+    .orderSummary__wrapper {
+      width: 40%;
+      margin: 0 0 0 9rem;
+
+      .acceptedPaymentMethods__container {
+        font-family: $proxima;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+
+        p {
+          margin: 0;
+          color: #212121;
+          font-weight: 600;
+          font-size: 0.85rem;
+          margin-bottom: 0.25rem;
+        }
+
+        .methods__container {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+
+          svg {
+            width: 3rem;
+            object-fit: contain;
+            height: 2rem;
+            margin-right: 0.25rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 575.98px) {
+  .cart__container {
+    width: 95%;
+    margin: 0 auto;
+    padding-top: 0;
+
+    .wrapper {
+      flex-direction: column;
+
+      .cart__mainInterface__wrapper {
+        width: 100%;
+      }
+
+      .orderSummary__wrapper {
+        width: 100%;
+        margin: 0;
+        margin-bottom: 5vh;
+
+        .acceptedPaymentMethods__container {
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+  .cart__container {
+    width: 95%;
+    margin: 0 auto;
+    padding-top: 0;
+
+    .wrapper {
+      flex-direction: column;
+
+      .cart__mainInterface__wrapper {
+        width: 100%;
+      }
+
+      .orderSummary__wrapper {
+        width: 100%;
+        margin-bottom: 5vh;
+
+        .acceptedPaymentMethods__container {
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) and (min-width: 768px) {
+  .cart__container {
+    width: calc(100% - 1rem);
+    margin: 0 auto;
+    padding-top: 0;
+
+    .wrapper {
+      flex-direction: column;
+
+      .cart__mainInterface__wrapper {
+        width: 100%;
+      }
+
+      .orderSummary__wrapper {
+        width: 100%;
+        margin-bottom: 5vh;
+
+        .acceptedPaymentMethods__container {
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+
+// Macbook Pro (Retina)
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+  .cart__container {
+    .wrapper {
+      justify-content: space-between;
+
+      .cart__mainInterface__wrapper {
+        width: 55%;
+      }
+
+      .orderSummary__wrapper {
+        width: 35%;
+        margin: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+@import "../../../../styles/variables";
+
+.container {
+  box-sizing: border-box;
+  padding-bottom: 10vh;
+  display: flex;
+  flex-direction: column;
+}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) and (min-width: 768px) {
+  .container {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}

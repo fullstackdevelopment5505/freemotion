@@ -1,0 +1,38 @@
+@import "../../../styles/variables";
+
+.products__container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex: 12;
+}
+
+@media (max-width: 575.98px) {
+  .products__container {
+    width: 100%;
+    background-color: #fff;
+    justify-content: space-between;
+  }
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+  .products__container {
+    width: 100%;
+    background-color: #fff;
+    justify-content: space-between;
+  }
+}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) and (min-width: 768px) {
+  .products__container {
+    width: 100%;
+    background-color: #fff;
+    justify-content: space-between;
+  }
+}
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) {
+}

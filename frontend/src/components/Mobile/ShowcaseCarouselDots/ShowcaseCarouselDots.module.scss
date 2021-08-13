@@ -1,0 +1,17 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  position: absolute;
+  left: 50%;
+  bottom: 1.25%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+  width: fit-content;
+
+  svg {
+    margin-bottom: -2px;
+    margin-right: 0.5rem;
+  }
+}
